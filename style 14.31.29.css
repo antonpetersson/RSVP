@@ -1,0 +1,23 @@
+
+
+/* Nedan Gäller Header*/
+#header {
+        height: 100px;
+        width: 100%;
+        background-color: #353333;
+    }
+
+    #menu {
+        justify-content: space-between;
+    }
+
+    .Title{
+        color: white;
+        font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .logout{
+        float: right;
+    }
+    /*Ovan Gäller Header*/
