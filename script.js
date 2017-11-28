@@ -2,14 +2,9 @@ $(document).ready(function(){
 //Globala variablar
 var listOfParties;
 
-
-
-
-
-
-
-
-
+//Fadar in formuläret på första sidan
+$(".formWrap").hide();
+$(".formWrap").fadeIn(1500);
 
 
 
@@ -57,7 +52,7 @@ function createUIFromLoadedParties() {
 
     //.. time
     var getTime = document.createElement("p");
-    getTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime + " ";
+    getTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime;
     getTime.className = "timeClass"
     party.appendChild(getTime);
     
