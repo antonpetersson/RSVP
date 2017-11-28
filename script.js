@@ -1,4 +1,18 @@
+$(document).ready(function(){
+
+//Globala variablar
 var listOfParties;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,16 +86,11 @@ function createUIFromLoadedParties() {
     getPrice.className = "priceClass"
     party.appendChild(getPrice);
 
-    
-
-    
-
-    
-
-
       //returning what to function created out from the function
       return party;
       
       
   
   }
+
+});
