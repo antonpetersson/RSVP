@@ -58,7 +58,7 @@ function createUIFromLoadedParties() {
 
     //.. time
     var getTime = document.createElement("p");
-    getTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime;
+    getTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime + " ";
     getTime.className = "timeClass"
     party.appendChild(getTime);
     
