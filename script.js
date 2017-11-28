@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 //Globala variablar
 var listOfParties;
 
