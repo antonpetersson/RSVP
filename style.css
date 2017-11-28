@@ -57,3 +57,43 @@ body{
     cursor: pointer;
 }
 
+
+/*         SIDA 2         */
+
+
+#header{
+    height: 80px; 
+    background-color: black;
+}
+#partyListContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.partyClass{
+    width: 400px;
+    background-color: blue;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.titleClass{
+    width: 100%;
+    margin: 0px; 
+}
+.dateClass{
+    
+    margin: 0px; 
+}
+.timeClass{
+    
+    margin: 0px; 
+}
+.imageClass{
+    
+    margin: 0px; 
+}
