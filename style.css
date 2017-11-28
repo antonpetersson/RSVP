@@ -74,13 +74,14 @@ body{
 .partyClass{
     width: 400px;
     background-color: blue;
-    height: 600px;
+    height: 500px;
     margin: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
+    padding: 10px;
 }
 .titleClass{
     width: 100%;
@@ -89,12 +90,16 @@ body{
 .dateClass{
     
     margin: 0px; 
+    width: 100%;
 }
 .timeClass{
-    
+    width: 100%;
     margin: 0px; 
 }
 .imageClass{
     
     margin: 0px; 
+}
+.descriptionClass{
+    margin-top: 0px;
 }
