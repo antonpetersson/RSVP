@@ -28,13 +28,13 @@ fetch("./fester.json")
 
 /** Uses the loaded parties data to create a visible party list on the website */
 function createUIFromLoadedParties() {
-    var main = document.getElementById("main");
-    main.className = "mainClass";
+    var partyListContainer = document.getElementById("partyListContainer");
+    partyListContainer.className = "partyListContainerClass";
 
-    //Looping through listOfPartoes and adding party to main div
+    //Looping through listOfPartoes and adding party to partyListContainer div
     for(var i = 0; i < listOfParties.length; i++){
         var party = createParty(listOfParties[i]);
-        main.appendChild(party);
+        partyListContainer.appendChild(party);
        
     }
 }
