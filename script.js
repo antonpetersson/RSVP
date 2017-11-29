@@ -2,14 +2,39 @@ $(document).ready(function(){
 //Globala variablar
 var listOfParties;
 
+
+
+
 //Fadar in formuläret på första sidan
+
 $(".formWrap").hide();
 $(".formWrap").fadeIn(1500);
 
-fetch("./users.json")
+/*fetch("./users.json")
 .then(function(response) {
     return response.json();
+})
+
+.then(function(userList) {
+    var users = ("/.users.json");
 });
+
+$(".buttonForm").click(function(){
+
+    var userName = users.username;
+    var passWord = users.password;
+
+    if(userName === $(".mailForm").val() && passWord === $(".passwordForm").val()){
+        console.log("hej");
+}
+
+});
+
+*/
+
+
+    
+
 
 
 

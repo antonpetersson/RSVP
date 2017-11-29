@@ -11,6 +11,8 @@ body{
     align-items: center;
     width: 100%;
     min-height:682px;
+    background-image: url("bild/blurback.jpg");
+    background-size: cover;
 }
 
 .formWrap{
@@ -18,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 450px;
+    height: 420px;
     width: 450px;
     box-shadow: 5px 5px 66px 5px rgb(65, 65, 65);
 }
@@ -35,14 +37,18 @@ body{
 
 .brandName{
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-weight: bold;
+    padding:20px 40px 20px 40px;
+    border:1px solid #2F243A;
+    color:#2F243A;
 }
 
 .mailForm, .passwordForm{
     width: 55%;
     margin:10px;
     height: 22px;
+    text-align: center;
 
 }
 
@@ -50,7 +56,7 @@ body{
     margin-top: 20px;
     width: 40%;
     height: 40px;
-    background-color: #3F3636;
+    background-color: #2F243A;
     border:none;
     color: white;
     font-weight: bold;
@@ -103,4 +109,149 @@ body{
 }
 .descriptionClass{
     margin-top: 0px;
+}
+
+
+
+/**************** SIDA 3 ******************/
+
+
+#wrapper body {
+    margin: 0px;
+    font: 1.2em/1.3em 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Roboto-Light', 'Roboto Light', 'Roboto', 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+#wrapper h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.regBox {
+    margin:auto;
+    width:400px;
+}
+
+.knappJa {
+    background: #34d994;
+    background-image: -webkit-linear-gradient(top, #34d994, #63b82b);
+    background-image: -moz-linear-gradient(top, #34d994, #63b82b);
+    background-image: -ms-linear-gradient(top, #34d994, #63b82b);
+    background-image: -o-linear-gradient(top, #34d994, #63b82b);
+    background-image: linear-gradient(to bottom, #34d994, #63b82b);
+    -webkit-border-radius: 34;
+    -moz-border-radius: 34;
+    border-radius: 34px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 13px 25px 15px 25px;
+    text-decoration: none;
+    border:none;
+    margin-bottom:20px;
+  }
+  
+  .knappJa:hover {
+        background: #05ff65;
+        background-image: -webkit-linear-gradient(top, #05ff65, #030f17);
+        background-image: -moz-linear-gradient(top, #05ff65, #030f17);
+        background-image: -ms-linear-gradient(top, #05ff65, #030f17);
+        background-image: -o-linear-gradient(top, #05ff65, #030f17);
+        background-image: linear-gradient(to bottom, #05ff65, #030f17);
+        text-decoration: none;
+   
+  }
+
+  .knappNej {
+    
+        background: #d9343c;
+        background-image: -webkit-linear-gradient(top, #d9343c, #b82c85);
+        background-image: -moz-linear-gradient(top, #d9343c, #b82c85);
+        background-image: -ms-linear-gradient(top, #d9343c, #b82c85);
+        background-image: -o-linear-gradient(top, #d9343c, #b82c85);
+        background-image: linear-gradient(to bottom, #d9343c, #b82c85);
+        -webkit-border-radius: 34;
+        -moz-border-radius: 34;
+        border-radius: 34px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 25px;
+        padding: 13px 25px 15px 25px;
+        text-decoration: none;
+        border:none;
+      }
+      
+      .knappNej:hover {
+        background: #ff0303;
+        background-image: -webkit-linear-gradient(top, #ff0303, #030f17);
+        background-image: -moz-linear-gradient(top, #ff0303, #030f17);
+        background-image: -ms-linear-gradient(top, #ff0303, #030f17);
+        background-image: -o-linear-gradient(top, #ff0303, #030f17);
+        background-image: linear-gradient(to bottom, #ff0303, #030f17);
+        text-decoration: none;
+      }
+  
+  
+textarea {
+    
+    width:300px;
+    height:100px;
+}
+#wrapper {
+   margin: 0;
+   padding: 0;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row;
+   flex-flow: row;
+}
+
+
+#wrapper > article,
+#wrapper > aside {
+   margin: 4px;
+   padding: 1em;
+}
+ 
+#wrapper > article {
+   background: #996;
+   -webkit-flex: 4 1 0;
+           flex: 4 1 0;
+   -webkit-order: 2;
+           order: 2;
+}
+
+
+#wrapper > aside {
+   background: #663;
+   -webkit-flex: 1 6 0;
+           flex: 1 6 0;
+}
+
+  
+#wrapper > aside {
+   -webkit-order: 3;
+           order: 3;
+}
+ 
+
+ 
+/* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #wrapper, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+}
+
+   #wrapper > article, #wrapper >  #wrapper > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #wrapper > #wrapper > aside, header, footer {
+    min-height: 50px;
+  
+   }
 }
