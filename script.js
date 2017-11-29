@@ -74,43 +74,43 @@ function createUIFromLoadedParties() {
     //.. title
     var getTitle = document.createElement("h1");
     getTitle.innerText = listOfParties.title;
-    getTitle.className = "titleClass"
+    getTitle.className = "titleClass";
     party.appendChild(getTitle);
 
     //.. date
     var getDate = document.createElement("p");
     getDate.innerText = listOfParties.date;
-    getDate.className = "dateClass"
+    getDate.className = "dateClass";
     party.appendChild(getDate);
 
     //.. time
     var getTime = document.createElement("p");
     getTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime;
-    getTime.className = "timeClass"
+    getTime.className = "timeClass";
     party.appendChild(getTime);
     
     //.. location
     var getLocation = document.createElement("p");
     getLocation.innerText = listOfParties.location;
-    getLocation.className = "locationClass"
+    getLocation.className = "locationClass";
     party.appendChild(getDate);
 
     //.. image
     var getImage = document.createElement("img");
     getImage.src = "bild/" + listOfParties.image;
-    getImage.className = "imageClass"
+    getImage.className = "imageClass";
     party.appendChild(getImage);
 
     //.. description
     var getDescription = document.createElement("p");
     getDescription.innerText = listOfParties.description;
-    getDescription.className = "descriptionClass"
+    getDescription.className = "descriptionClass";
     party.appendChild(getDescription);
 
     //.. price
     var getPrice = document.createElement("p");
     getPrice.innerText = listOfParties.price + " kr";
-    getPrice.className = "priceClass"
+    getPrice.className = "priceClass";
     party.appendChild(getPrice);
 
       //returning what to function created out from the function
