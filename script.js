@@ -6,6 +6,14 @@ var listOfParties;
 $(".formWrap").hide();
 $(".formWrap").fadeIn(1500);
 
+fetch("./users.json")
+.then(function(response) {
+    return response.json();
+});
+
+
+
+
 
 
 
