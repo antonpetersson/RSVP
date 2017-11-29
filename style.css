@@ -11,6 +11,8 @@ body{
     align-items: center;
     width: 100%;
     min-height:682px;
+    background-image: url("bild/blurback.jpg");
+    background-size: cover;
 }
 
 .formWrap{
@@ -18,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 450px;
+    height: 420px;
     width: 450px;
     box-shadow: 5px 5px 66px 5px rgb(65, 65, 65);
 }
@@ -35,14 +37,18 @@ body{
 
 .brandName{
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-weight: bold;
+    padding:20px 40px 20px 40px;
+    border:1px solid #2F243A;
+    color:#2F243A;
 }
 
 .mailForm, .passwordForm{
     width: 55%;
     margin:10px;
     height: 22px;
+    text-align: center;
 
 }
 
@@ -50,7 +56,7 @@ body{
     margin-top: 20px;
     width: 40%;
     height: 40px;
-    background-color: #3F3636;
+    background-color: #2F243A;
     border:none;
     color: white;
     font-weight: bold;
