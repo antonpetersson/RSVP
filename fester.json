@@ -6,6 +6,7 @@
         "startTime": "21.00" ,
         "endTime": "06.00",
         "image": "nattklubb1.jpg",
+        "guests": ["Janne", "Anton", "Louise", "Jesper"],
         "price": 595
     },{
         "title": "Hemmafesten",
@@ -14,6 +15,7 @@
         "startTime": "17.30",
         "endTime": "01.30", 
         "image": "hemmafest1.jpg",
+        "guests": ["André", "Anders", "Amanda", "Farosh", "Ulrika"],
         "price": 395
     },{
         "title": "Dagsfesten",
@@ -22,6 +24,7 @@
         "startTime": "16.00",
         "endTime": "-",
         "image": "dagsfest1.jpg",
+        "guests": ["Jesper", "Emil", "Jonathan", "Christian", "Martin", "Joel"],
         "price": 0
     },{
         "title": "Fler alternativ,",
