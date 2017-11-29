@@ -1,27 +1,33 @@
 [
     {
+        "id": 1,
         "title": "Nattklubben X",
         "description": "Avenyns absolut trendigaste Nattklubb - RSVP'a nu och få gratis drink i entrén",
         "date": "Alla lördagar",
         "startTime": "21.00" ,
         "endTime": "06.00",
-        "image": "iPhoneX.png",
+        "image": "nattklubb1.jpg",
+        "guests": ["Janne", "Anton", "Louise", "Jesper"],
         "price": 595
     },{
+        "id": 2,
         "title": "Hemmafesten",
         "description": "Hemmafest på takvåningen, egen DJ och en stor utebalkong med utsikt över hela Göteborg, ta med dina vänner och njut!",
         "date": "12 Januari",
         "startTime": "17.30",
         "endTime": "01.30", 
-        "image": "OnePlus5.png",
+        "image": "hemmafest1.jpg",
+        "guests": ["André", "Anders", "Amanda", "Farosh", "Ulrika"],
         "price": 395
     },{
+        "id": 3,
         "title": "Dagsfesten",
         "description": "Det finns inget bättre än att ta en bärs utomhus i solen, med dina vänner.",
         "date": "20 Januari",
         "startTime": "16.00",
         "endTime": "-",
-        "image": "SamsungS8.png",
+        "image": "dagsfest1.jpg",
+        "guests": ["Jesper", "Emil", "Jonathan", "Christian", "Martin", "Joel"],
         "price": 0
     },{
         "title": "Fler alternativ,",
