@@ -57,10 +57,18 @@ fetch("./fester.json")
 function createUIFromLoadedParties() {
     var partyListContainer = document.getElementById("partyListContainer");
     partyListContainer.className = "partyListContainerClass";
+    
+   
+   
 
-    //Looping through listOfPartoes and adding party to partyListContainer div
+    //Looping through listOfParties and adding party to partyListContainer div
     for(var i = 0; i < listOfParties.length; i++){
         var party = createParty(listOfParties[i]);
+        
+        $(party).click(function(){
+            alert("The paragraph was clicked.");
+        }); 
+        
         partyListContainer.appendChild(party);
        
     }
