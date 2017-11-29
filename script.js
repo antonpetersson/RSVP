@@ -74,7 +74,9 @@ function createUIFromLoadedParties() {
     var getImage = document.createElement("img");
     getImage.src = "bild/" + listOfParties.image;
     getImage.className = "imageClass";
-    party.appendChild(getImage);
+    $(party).css("background-image", "url(" + getImage.src + ")");
+        
+        
 
     //.. description
     var getDescription = document.createElement("p");
