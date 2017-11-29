@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding:0;
+    background-color: black;
 }
 
 
@@ -102,39 +103,61 @@ body{
 }
 .partyClass{
     width: 400px;
-    background-color: blue;
+    background-color: rgb(179, 179, 179);
     background-repeat: no-repeat;
-    height: 500px;
+    height: 380px;
     margin: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    padding: 10px;
+    
+    
+    
 }
+.partyClass:hover {
+    -webkit-filter: brightness(150%); /* Safari */
+    filter:  brightness(150%);
+    transition: 1s;
+    }
+
 .titleClass{
-    width: 100%;
+    width: 60%;
     margin: 0px; 
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 5px;
 }
 .dateClass{
-    
+    width: 60%;
     margin: 0px; 
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 5px;
 }
 .timeClass{
-    width: 100%;
+    width: 60%;
     margin: 0px; 
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 5px;
 }
 .imageClass{
     
     margin: 0px; 
 }
 .descriptionClass{
-    margin-top: 0px;
+    margin-top: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0px;
 }
 
-
+.priceClass{
+    
+    margin: 0px;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 /**************** SIDA 3 ******************/
 
