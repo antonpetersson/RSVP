@@ -5,7 +5,7 @@
         "date": "Alla lördagar",
         "startTime": "21.00" ,
         "endTime": "06.00",
-        "image": "iPhoneX.png",
+        "image": "nattklubb1.jpg",
         "price": 595
     },{
         "title": "Hemmafesten",
@@ -13,7 +13,7 @@
         "date": "12 Januari",
         "startTime": "17.30",
         "endTime": "01.30", 
-        "image": "OnePlus5.png",
+        "image": "hemmafest1.jpg",
         "price": 395
     },{
         "title": "Dagsfesten",
@@ -21,7 +21,7 @@
         "date": "20 Januari",
         "startTime": "16.00",
         "endTime": "-",
-        "image": "SamsungS8.png",
+        "image": "dagsfest1.jpg",
         "price": 0
     },{
         "title": "Fler alternativ,",

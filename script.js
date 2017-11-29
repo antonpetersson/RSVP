@@ -2,9 +2,42 @@ $(document).ready(function(){
 //Globala variablar
 var listOfParties;
 
+
+
+
 //Fadar in formuläret på första sidan
+
 $(".formWrap").hide();
 $(".formWrap").fadeIn(1500);
+
+/*fetch("./users.json")
+.then(function(response) {
+    return response.json();
+})
+
+.then(function(userList) {
+    var users = ("/.users.json");
+});
+
+$(".buttonForm").click(function(){
+
+    var userName = users.username;
+    var passWord = users.password;
+
+    if(userName === $(".mailForm").val() && passWord === $(".passwordForm").val()){
+        console.log("hej");
+}
+
+});
+
+*/
+
+
+    
+
+
+
+
 
 
 
@@ -41,43 +74,45 @@ function createUIFromLoadedParties() {
     //.. title
     var getTitle = document.createElement("h1");
     getTitle.innerText = listOfParties.title;
-    getTitle.className = "titleClass"
+    getTitle.className = "titleClass";
     party.appendChild(getTitle);
 
     //.. date
     var getDate = document.createElement("p");
     getDate.innerText = listOfParties.date;
-    getDate.className = "dateClass"
+    getDate.className = "dateClass";
     party.appendChild(getDate);
 
     //.. time
     var getTime = document.createElement("p");
     getTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime;
-    getTime.className = "timeClass"
+    getTime.className = "timeClass";
     party.appendChild(getTime);
     
     //.. location
     var getLocation = document.createElement("p");
     getLocation.innerText = listOfParties.location;
-    getLocation.className = "locationClass"
+    getLocation.className = "locationClass";
     party.appendChild(getDate);
 
     //.. image
     var getImage = document.createElement("img");
     getImage.src = "bild/" + listOfParties.image;
-    getImage.className = "imageClass"
-    party.appendChild(getImage);
+    getImage.className = "imageClass";
+    $(party).css("background-image", "url(" + getImage.src + ")");
+        
+        
 
     //.. description
     var getDescription = document.createElement("p");
     getDescription.innerText = listOfParties.description;
-    getDescription.className = "descriptionClass"
+    getDescription.className = "descriptionClass";
     party.appendChild(getDescription);
 
     //.. price
     var getPrice = document.createElement("p");
     getPrice.innerText = listOfParties.price + " kr";
-    getPrice.className = "priceClass"
+    getPrice.className = "priceClass";
     party.appendChild(getPrice);
 
       //returning what to function created out from the function
