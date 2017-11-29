@@ -3,6 +3,31 @@ body{
     padding:0;
 }
 
+
+/* Nedan Gäller Header*/
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: #353333;
+}
+
+#menu {
+    justify-content: space-between;
+}
+
+.Title{
+    color: white;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.logout{
+    float: right;
+}
+/*Ovan Gäller Header*/
+
+
+
 /*         SIDA 1           */
 #main{
     background-color: black;
@@ -67,10 +92,8 @@ body{
 /*         SIDA 2         */
 
 
-#header{
-    height: 80px; 
-    background-color: black;
-}
+
+
 #partyListContainer{
     display: flex;
     flex-flow: row wrap;
@@ -115,11 +138,7 @@ body{
 /**************** SIDA 3 ******************/
 
 
-#wrapper body {
-    margin: 0px;
-    font: 1.2em/1.3em 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Roboto-Light', 'Roboto Light', 'Roboto', 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', Helvetica, Arial, sans-serif;
-  color: #fff;
-}
+
 #wrapper h1 {
     font-weight: normal;
     text-align: center;
@@ -195,6 +214,7 @@ textarea {
     
     width:300px;
     height:100px;
+    margin-left: 40px;  
 }
 #wrapper {
    margin: 0;
@@ -203,6 +223,8 @@ textarea {
    display: flex;
    -webkit-flex-flow: row;
    flex-flow: row;
+   font: 1.2em/1.3em 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Roboto-Light', 'Roboto Light', 'Roboto', 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', Helvetica, Arial, sans-serif;
+   color: #fff;
 }
 
 
@@ -247,10 +269,19 @@ textarea {
     /* Return them to document order */
     -webkit-order: 0;
             order: 0;
+            min-width:400px;
    }
-  
-   #wrapper > #wrapper > aside, header, footer {
+   
+   #wrapper > #wrapper > aside  {
     min-height: 50px;
+   
+
   
+   }
+
+   #knappJa, #knappNej {
+
+    font-size: 10px;
+
    }
 }
