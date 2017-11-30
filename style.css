@@ -176,15 +176,13 @@ textarea {
     width:200px;
     height:70px;
 
-}
+} 
 
 .knappBox {
 
     width:300px;
     
-
-
-}
+} 
 
 
 .guestList {
@@ -299,3 +297,17 @@ text-align:center;
         text-decoration: none;
       }
   
+      .highlightedClass {
+        width: 600px;
+        background-size: 600px;
+        height: 380px;
+
+
+        
+      }
+
+      .bgcolor {
+        width: 480px;  
+        background-color: white;
+
+      }

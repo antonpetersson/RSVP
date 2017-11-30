@@ -79,7 +79,6 @@ $(document).ready(function(){
     
     
            $("#partyId1").click(function(){
-                console.log("hej 1");
                 $("#wrapper").show()
                 $("#highlightedId1").show()
                 $("#highlightedId2").hide()
@@ -93,7 +92,6 @@ $(document).ready(function(){
             }); 
     
             $("#partyId2").click(function(){
-                console.log("hej 1");
                 $("#wrapper").show()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").show()
@@ -109,7 +107,6 @@ $(document).ready(function(){
              }); 
     
              $("#partyId3").click(function(){
-                console.log("hej 1");
                 $("#wrapper").show()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
@@ -204,8 +201,40 @@ $(document).ready(function(){
             getHighlightedTitle.innerText = listOfParties.title;
             getHighlightedTitle.className = "highlightedTitleClass";
             highlightedParty.appendChild(getHighlightedTitle);
-
-          //returning what to function created out from the function
+            //Date
+            var getHighlightedDate = document.createElement("p");
+            getHighlightedDate.innerText = listOfParties.date;
+            getHighlightedDate.className = "highlightedDateClass";
+            highlightedParty.appendChild(getHighlightedDate);
+            //Time
+            var getHighlightedTime = document.createElement("p");
+            getHighlightedTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime;
+            getHighlightedTime.className = "highlightedTimeClass";
+            highlightedParty.appendChild(getHighlightedTime);
+            //Image
+            var getHighlightedImage = document.createElement("img");
+            getHighlightedImage.src = "bild/" + listOfParties.image;
+            getHighlightedImage.className = "highlightedImageClass";
+            $(highlightedParty).css("background-image", "url(" + getHighlightedImage.src + ")");
+            //Location
+            var getHighlightedLocation = document.createElement("p");
+            getHighlightedLocation.innerText = listOfParties.location;
+            getHighlightedLocation.className = "highlightedLocationClass"
+            highlightedParty.appendChild(getHighlightedLocation);
+            //Description
+            var getHighlightedDescription = document.createElement("p");
+            getHighlightedDescription.innerText = listOfParties.description;
+            getHighlightedDescription.className = "highlightedDescriptionClass";
+            highlightedParty.appendChild(getHighlightedDescription);
+            //Price
+            var getHighlightedPrice = document.createElement("p");
+            getHighlightedPrice.innerText = listOfParties.price + " kr";
+            getHighlightedPrice.className = "highlightedPriceClass";
+            highlightedParty.appendChild(getHighlightedPrice);
+          
+          
+          
+            //returning what to function created out from the function
           return highlightedParty;
 
 

@@ -6,6 +6,7 @@
         "date": "Alla lördagar",
         "startTime": "21.00" ,
         "endTime": "06.00",
+        "location": "Kungsportsavenyn 8, tfn: 0763-096174",
         "image": "nattklubb1.jpg",
         "guests": ["Janne", "Anton", "Louise", "Jesper"],
         "price": 595
@@ -16,6 +17,7 @@
         "date": "12 Januari",
         "startTime": "17.30",
         "endTime": "01.30", 
+        "location": "Magasinsgatan 24, tfn: 0706-991362",
         "image": "hemmafest1.jpg",
         "guests": ["André", "Anders", "Amanda", "Farosh", "Ulrika"],
         "price": 395
@@ -25,14 +27,10 @@
         "description": "Det finns inget bättre än att ta en bärs utomhus i solen, med dina vänner.",
         "date": "20 Januari",
         "startTime": "16.00",
-        "endTime": "-",
+        "endTime": "",
+        "location": "Slottsskogspromenaden 35, tfn: 031-551729",
         "image": "dagsfest1.jpg",
         "guests": ["Jesper", "Emil", "Jonathan", "Christian", "Martin", "Joel"],
         "price": 0
-    },{
-        "title": "Fler alternativ,",
-        "description": "Om vi behöver fler alternativ så skriver jag in flera /Andre",
-        "image": "LGV30.png",
-        "price": 7495
     }
 ]
