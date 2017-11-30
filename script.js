@@ -220,7 +220,7 @@ $(document).ready(function(){
 
                 createGuestList(4);
             }); 
-
+            
 
 
 
@@ -238,6 +238,9 @@ $(document).ready(function(){
 
         
     }
+    $(".knappJa").click(function(){
+        console.log("ja")
+    });
     
     
     
@@ -355,6 +358,7 @@ $(document).ready(function(){
        
         
         guestList = "<ul class='guestListUl'>";
+        //"i < partyArray.length;" ska ändras till typ "partyarray.guests.lenth"
         for(var i = 0; i < partyArray.length; i++) { 
             guestList += "<li>" + partyArray[val].guests[i] + "</li>"
         }     
