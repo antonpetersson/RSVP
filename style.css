@@ -173,8 +173,11 @@ body{
 
 textarea {
 
-    max-width:400px;
-    max-height:70px;
+    width:400px;
+    height:70px;
+  max-width:420px;
+  max-height:100px;  
+  
     margin:auto;
     
 }
