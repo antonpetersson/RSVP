@@ -1,7 +1,11 @@
 body{
     margin:0;
     padding:0;
+<<<<<<< HEAD
     background-color: #252229;
+=======
+    background-color: rgb(29, 28, 28);
+>>>>>>> 4ae2a19440f68e8b1f6261e654716635e6378dbf
 }
 
 
@@ -9,7 +13,7 @@ body{
 #header {
     height: 100px;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #353333;
 
  
 }
@@ -17,9 +21,9 @@ body{
 
 
 .Title{
-    color:#252229;
+    color: white;
     font-size: 20px;
-    /*font-family: 'Dosis', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
     width:50%;
     float:left;
     
@@ -141,6 +145,7 @@ body{
 
 
 #partyListContainer{
+    width: 100vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;

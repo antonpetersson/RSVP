@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     //Globala variablar
     var listOfParties;
     var users;
@@ -12,7 +13,9 @@ $(document).ready(function(){
         users = ourUsers;
     });
 
-
+    $("#partyListContainer").hide();
+    $("#footer").hide();
+    $("#header").hide();
     $(".div2").hide();
     $(".div3").hide();
 
@@ -48,9 +51,11 @@ $(document).ready(function(){
             
             if( $(".mailForm").val() == users[i].username && $(".passwordForm").val() == users[i].password){
 
-                $(".formWrap").hide();
-                $(".loginForm").hide();
-                $(".testar").show();
+                
+                $("#main").hide();
+                $("#partyListContainer").show();
+                $("#footer").show();
+                $("#header").show();
 
                 sessionStorage.saveUser = users[i].username;
                 
@@ -81,7 +86,12 @@ $(document).ready(function(){
         return response.json();
     })
     .then(function(parties) {
+
         listOfParties = parties;
+       // json stringify
+       var json_str = JSON.stringify(listOfParties);
+       sessionStorage.listOfParties = json_str;
+        
         createUIFromLoadedParties();
     });
     
@@ -107,15 +117,9 @@ $(document).ready(function(){
             
         
     
+    //console.log (listOfParties[i].id)
     
-    
-    
-    
-    
-    
-    
-           $("#partyId1").click(function(){
-                console.log("hej 1");
+            $("#partyId1").click(function(){
                 $("#wrapper").show()
                 $("#highlightedId1").show()
                 $("#highlightedId2").hide()
@@ -125,11 +129,10 @@ $(document).ready(function(){
                 $("#partyId1").hide()
                 $("#partyId2").show()
                 $("#partyId3").show()
-    
+                createGuestList(1);
             }); 
     
             $("#partyId2").click(function(){
-                console.log("hej 1");
                 $("#wrapper").show()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").show()
@@ -142,7 +145,6 @@ $(document).ready(function(){
              }); 
     
              $("#partyId3").click(function(){
-                console.log("hej 1");
                 $("#wrapper").show()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
@@ -164,6 +166,9 @@ $(document).ready(function(){
             
            
         }
+       
+
+        
     }
     
     
@@ -238,13 +243,66 @@ $(document).ready(function(){
             getHighlightedTitle.innerText = listOfParties.title;
             getHighlightedTitle.className = "highlightedTitleClass";
             highlightedParty.appendChild(getHighlightedTitle);
-
-          //returning what to function created out from the function
+            //Date
+            var getHighlightedDate = document.createElement("p");
+            getHighlightedDate.innerText = listOfParties.date;
+            getHighlightedDate.className = "highlightedDateClass";
+            highlightedParty.appendChild(getHighlightedDate);
+            //Time
+            var getHighlightedTime = document.createElement("p");
+            getHighlightedTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime;
+            getHighlightedTime.className = "highlightedTimeClass";
+            highlightedParty.appendChild(getHighlightedTime);
+            //Image
+            var getHighlightedImage = document.createElement("img");
+            getHighlightedImage.src = "bild/" + listOfParties.image;
+            getHighlightedImage.className = "highlightedImageClass";
+            $(highlightedParty).css("background-image", "url(" + getHighlightedImage.src + ")");
+            //Location
+            var getHighlightedLocation = document.createElement("p");
+            getHighlightedLocation.innerText = listOfParties.location;
+            getHighlightedLocation.className = "highlightedLocationClass"
+            highlightedParty.appendChild(getHighlightedLocation);
+            //Description
+            var getHighlightedDescription = document.createElement("p");
+            getHighlightedDescription.innerText = listOfParties.description;
+            getHighlightedDescription.className = "highlightedDescriptionClass";
+            highlightedParty.appendChild(getHighlightedDescription);
+            //Price
+            var getHighlightedPrice = document.createElement("p");
+            getHighlightedPrice.innerText = listOfParties.price + " kr";
+            getHighlightedPrice.className = "highlightedPriceClass";
+            highlightedParty.appendChild(getHighlightedPrice);
+          
+          
+          
+            //returning what to function created out from the function
           return highlightedParty;
 
 
       }
+/*
+      function createGuestList(val){
+        var partyArray = JSON.parse(sessionStorage.listOfParties);
+
+            console.log(val)
+       
+       
+        guestList = "<ul>";
+        for(var i = 0; i < partyArray.length; i++) { 
+            if(partyArray[i].id == val){
+                console.log(hej);
+
+            }
 
 
-    
+
+            guestList += "<li>" + partyArray[val].guests + "</li>"
+        }
+        guestList += "</ul>"
+        console.log(guestList);
+          
+      }
+  */
     });
+    
