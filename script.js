@@ -1,7 +1,34 @@
 $(document).ready(function(){
     //Globala variablar
     var listOfParties;
-    
+    var users;
+    //Hämtar users.json och sparar i en variabel (users)
+    fetch("./users.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(ourUsers) {
+        users = ourUsers;
+        createUserList();
+    });
+    //Kollar om json objekten sparas i varialbeln
+    function createUserList() {
+        console.log(users);
+        $(".buttonForm").click(function(){
+        for(var i = 0; i < users.length; i++){
+            
+                /*console.log(users[i].username)*/
+            
+            if( $(".mailForm").val() == users[i].username && $(".passwordForm").val() == users[i].password){
+                sessionStorage = users[i];
+                console.log("hej");
+                }else{
+                console.log("hejdå");
+                }
+            
+            }
+        })
+    }
    
     
     //Fadar in formuläret på första sidan
@@ -60,6 +87,9 @@ $(document).ready(function(){
 
         var highlightedPartyContainer = document.getElementById("boxInfo");
         highlightedPartyContainer.classname = "highlightedPartyContainerClass";
+
+        var guestListContainer = document.getElementById("guestListBox");
+        guestListContainer.classname = "guestListContainerClass";
        
        
     
@@ -69,6 +99,7 @@ $(document).ready(function(){
            /* .boxInfo.innerHtml*/
             var party = createParty(listOfParties[i]);
             var highlightedParty = createHighlightedParty(listOfParties[i]);
+            
         
     
     
@@ -103,9 +134,6 @@ $(document).ready(function(){
                 $("#partyId1").show()
                 $("#partyId2").hide()
                 $("#partyId3").show()
-                 
-         
-     
              }); 
     
              $("#partyId3").click(function(){
@@ -126,6 +154,7 @@ $(document).ready(function(){
             
             partyListContainer.appendChild(party);
             highlightedPartyContainer.appendChild(highlightedParty);
+            ///FIXA ANTON guestListContainer.appendChild();
 
             
            
