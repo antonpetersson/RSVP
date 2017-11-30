@@ -124,12 +124,18 @@ $(document).ready(function(){
                 $("#highlightedId1").show()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
                 $("#highlightedIdundefined").hide()
-
+                
                 $("#partyId1").hide()
                 $("#partyId2").show()
                 $("#partyId3").show()
-                createGuestList(1);
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                createGuestList(0);
             }); 
     
             $("#partyId2").click(function(){
@@ -137,11 +143,18 @@ $(document).ready(function(){
                 $("#highlightedId1").hide()
                 $("#highlightedId2").show()
                 $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
                 $("#highlightedIdundefined").hide()
-
+                
                 $("#partyId1").show()
                 $("#partyId2").hide()
                 $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                createGuestList(1);
              }); 
     
              $("#partyId3").click(function(){
@@ -149,19 +162,87 @@ $(document).ready(function(){
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").show()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
                 $("#highlightedIdundefined").hide()
 
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").hide()
-                 
-         
-     
-             }); 
-            
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+
+                createGuestList(2);
+            }); 
+            $("#partyId4").click(function(){
+                $("#wrapper").show()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").show()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedIdundefined").hide()
+
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").hide()
+                $("#partyId5").show()
+                $("#partyId6").show()
+
+                createGuestList(2);
+            }); 
+            $("#partyId5").click(function(){
+                $("#wrapper").show()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").show()
+                $("#highlightedId6").hide()
+                $("#highlightedIdundefined").hide()
+
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").hide()
+                $("#partyId6").show()
+
+                createGuestList(2);
+            }); 
+            $("#partyId6").click(function(){
+                $("#wrapper").show()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").show()
+                $("#highlightedIdundefined").hide()
+
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").hide()
+
+                createGuestList(2);
+            }); 
+
+
+
+
+
+
+
             partyListContainer.appendChild(party);
             highlightedPartyContainer.appendChild(highlightedParty);
-            ///FIXA ANTON guestListContainer.appendChild();
+            
 
             
            
@@ -281,28 +362,19 @@ $(document).ready(function(){
 
 
       }
-/*
-      function createGuestList(val){
-        var partyArray = JSON.parse(sessionStorage.listOfParties);
 
-            console.log(val)
+    function createGuestList(val){
+        var partyArray = JSON.parse(sessionStorage.listOfParties);       
        
-       
-        guestList = "<ul>";
+        console.log(val);
+        guestList = "<ul class='guestListUl'>";
         for(var i = 0; i < partyArray.length; i++) { 
-            if(partyArray[i].id == val){
-                console.log(hej);
-
-            }
-
-
-
-            guestList += "<li>" + partyArray[val].guests + "</li>"
-        }
+            guestList += "<li>" + partyArray[val].guests[i] + "</li>"
+        }     
         guestList += "</ul>"
-        console.log(guestList);
-          
+        
+        $("#guestListBox").html(guestList);
       }
-  */
+  
     });
     
