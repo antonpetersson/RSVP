@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     //Globala variablar
     var listOfParties;
     var users;
@@ -76,7 +77,12 @@ $(document).ready(function(){
         return response.json();
     })
     .then(function(parties) {
+
         listOfParties = parties;
+       // json stringify
+       var json_str = JSON.stringify(listOfParties);
+       sessionStorage.listOfParties = json_str;
+        
         createUIFromLoadedParties();
     });
     
@@ -102,15 +108,9 @@ $(document).ready(function(){
             
         
     
+    //console.log (listOfParties[i].id)
     
-    
-    
-    
-    
-    
-    
-           $("#partyId1").click(function(){
-                console.log("hej 1");
+            $("#partyId1").click(function(){
                 $("#wrapper").show()
                 $("#highlightedId1").show()
                 $("#highlightedId2").hide()
@@ -120,11 +120,10 @@ $(document).ready(function(){
                 $("#partyId1").hide()
                 $("#partyId2").show()
                 $("#partyId3").show()
-    
+                createGuestList(1);
             }); 
     
             $("#partyId2").click(function(){
-                console.log("hej 1");
                 $("#wrapper").show()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").show()
@@ -137,7 +136,6 @@ $(document).ready(function(){
              }); 
     
              $("#partyId3").click(function(){
-                console.log("hej 1");
                 $("#wrapper").show()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
@@ -159,6 +157,9 @@ $(document).ready(function(){
             
            
         }
+       
+
+        
     }
     
     
@@ -239,7 +240,28 @@ $(document).ready(function(){
 
 
       }
+/*
+      function createGuestList(val){
+        var partyArray = JSON.parse(sessionStorage.listOfParties);
+
+            console.log(val)
+       
+       
+        guestList = "<ul>";
+        for(var i = 0; i < partyArray.length; i++) { 
+            if(partyArray[i].id == val){
+                console.log(hej);
+
+            }
 
 
-    
+
+            guestList += "<li>" + partyArray[val].guests + "</li>"
+        }
+        guestList += "</ul>"
+        console.log(guestList);
+          
+      }
+  */
     });
+    
