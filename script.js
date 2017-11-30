@@ -121,9 +121,6 @@ $(document).ready(function(){
             var party = createParty(listOfParties[i]);
             var highlightedParty = createHighlightedParty(listOfParties[i]);
             
-        
-    
-    //console.log (listOfParties[i].id)
     
             $("#partyId1").click(function(){
                 $("#wrapper").slideDown()
@@ -220,24 +217,12 @@ $(document).ready(function(){
 
                 createGuestList(4);
             }); 
-            
-
-
-
-
-
 
             partyListContainer.appendChild(party);
-            highlightedPartyContainer.appendChild(highlightedParty);
-            
-
-            
-           
+            highlightedPartyContainer.appendChild(highlightedParty); 
         }
-       
-
-        
     }
+
     $(".knappJa").click(function(){
         console.log("ja")
     });
