@@ -80,6 +80,12 @@ body{
     background-size: cover;
 }
 
+.testar{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
 .formWrap{
     display: flex;
     justify-content: center;
