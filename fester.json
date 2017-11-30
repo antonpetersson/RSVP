@@ -7,7 +7,7 @@
         "startTime": "21.00" ,
         "endTime": "06.00",
         "image": "nattklubb1.jpg",
-        "guests": ["Janne", "Anton", "Louise", "Jesper"],
+        "guests": ["Janne", "Anton", "Louise", "Jesper", "Amanda"],
         "price": 595
     },{
         "id": 2,
@@ -30,9 +30,26 @@
         "guests": ["Jesper", "Emil", "Jonathan", "Christian", "Martin", "Joel"],
         "price": 0
     },{
-        "title": "Fler alternativ,",
-        "description": "Om vi behöver fler alternativ så skriver jag in flera /Andre",
-        "image": "LGV30.png",
-        "price": 7495
+        "id": 4,
+        "title": "Klassfesten",
+        "description": "Ta med hela din klass eller ditt arbetsteam i en ball lokal på Gothia Hotel och njut av varje sekund tillsammans!",
+        "date": "19 Januari",
+        "startTime": "17.00",
+        "endTime": "00.00",
+        "location": "Mässans Gata 24, tfn: 031-548345",
+        "image": "klassfesten.jpg",
+        "guests": ["Jonas", "Elin", "Daniel", "Jenny", "Pedram", "Athena"],
+        "price": 295
+    },{
+        "id": 5,
+        "title": "Båtfesten",
+        "description": "Om festen på fasta marken inte duger för eran smak, varför inte dra ut o kröka ute till havs?",
+        "date": "10 Mars",
+        "startTime": "17.00",
+        "endTime": "09.00",
+        "location": "PIR FYRA 2, tfn: 031-328345",
+        "image": "batfesten.jpg",
+        "guests": ["David", "Mylene", "Mikela", "Joakim", "Johan"],
+        "price": 995
     }
 ]
