@@ -193,7 +193,7 @@ $(document).ready(function(){
                 $("#partyId5").show()
                 $("#partyId6").show()
 
-                createGuestList(2);
+                createGuestList(3);
             }); 
             $("#partyId5").click(function(){
                 $("#wrapper").slideDown()
@@ -212,27 +212,9 @@ $(document).ready(function(){
                 $("#partyId5").hide()
                 $("#partyId6").show()
 
-                createGuestList(2);
+                createGuestList(4);
             }); 
-            $("#partyId6").click(function(){
-                $("#wrapper").slideDown()
-                $("#highlightedId1").hide()
-                $("#highlightedId2").hide()
-                $("#highlightedId3").hide()
-                $("#highlightedId4").hide()
-                $("#highlightedId5").hide()
-                $("#highlightedId6").show()
-                $("#highlightedIdundefined").hide()
-
-                $("#partyId1").show()
-                $("#partyId2").show()
-                $("#partyId3").show()
-                $("#partyId4").show()
-                $("#partyId5").show()
-                $("#partyId6").hide()
-
-                createGuestList(2);
-            }); 
+        
 
 
 
