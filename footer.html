@@ -1,0 +1,198 @@
+<html>
+        
+        <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+                $(document).ready(function(){
+    
+                    // Kör detta när sidan laddas
+    
+                    $(".div2").hide();
+                    $(".div3").hide();
+    
+                    $(".knapp1").click(function(){
+                        $(".div1").slideDown("1000");
+                        $(".div2").hide();
+                        $(".div3").hide();
+                    });
+    
+                    $(".knapp2").click(function(){
+                        $(".div2").slideDown("1000");
+                        $(".div1").hide();
+                        $(".div3").hide();
+                    });
+    
+                    $(".knapp3").click(function(){
+                        $(".div3").slideDown("1000");
+                        $(".div1").hide();
+                        $(".div2").hide();
+                    });
+            
+    
+                
+                });
+    
+        </script>
+        
+        <style>
+
+ 
+    #footer{
+        position: absolute;
+        right: 0;
+         bottom: 0;
+        left: 0;
+        height: 200px;
+        width: 100%;
+        background-color: rgb(53, 51, 51);
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+
+         }
+
+    .menu {
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        background-color: rgb(53, 51, 51);
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        padding-left: 50px;
+        }
+
+    .knapp1 {
+        background-color: rgb(53, 51, 51);
+        padding: 10px;
+        color: white;
+        border:none;
+        margin-top:5px;
+        font-size:15px;
+    }
+
+    .knapp2 {
+        background-color: rgb(53, 51, 51);
+        padding: 10px;
+        color: white;
+        border:none;
+        margin-top:10px;
+        font-size:15px;
+    }
+    .knapp3 {
+        background-color: rgb(53, 51, 51);
+        padding: 10px;
+        color: white;
+        border:none;
+        margin-top:10px;
+        font-size:15px;
+    }
+
+
+    .knapp1:hover {
+
+        font-size:20px;
+
+    }
+    .knapp2:hover {
+
+        font-size:20px;
+
+    }
+    .knapp3:hover {
+
+        font-size:20px;
+
+    }
+
+    button {
+        padding-bottom: 10px;
+    }
+        
+
+    .div1, .div2, .div3 {
+        width: 500px;
+        height: 160px;
+        background-color: rgb(41, 39, 39);
+        margin-top: 10px;
+        font-weight: bold;
+        border-radius: 10px;
+        color: white;
+        padding:10px;
+        }
+
+    #link {
+        padding: 20px;
+        margin-left: 10px;  
+        display:flex;
+
+        }    
+
+
+
+        .twitter {
+
+            margin-left:20px;   
+        }
+  
+        .twitter i:hover { 
+
+            color:black;
+
+        }
+
+
+
+    </style>
+    </head>
+    <body>
+      
+        <div id="footer">
+
+                
+                
+               <div class="menu"> <button href="#" class="knapp1">Om Oss</button>  <button href="#" class="knapp2">Kontakt</button>  <button href="#" class="knapp3">Villkor</button></div>
+           
+               <div class="box div1">Om Oss<br>
+                <br>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.<br> 
+                Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd<br>  
+                boksättare tog att antal bokstäver och blandade dem för att göra ett<br>  
+                </div>
+           
+               <div class="box div2">Kontakt<br>
+                <center><br>Adress: Partyvägen 1<br>
+                54694 Stockholm<br>
+                <br>Telefon: 0834-73462372<br>
+                <br>E-mail: party@mail.se</center></div>
+
+           
+               <div class="box div3">Villkor<br>
+                <br>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.<br> 
+                Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd<br>  
+                boksättare tog att antal bokstäver och blandade dem för att göra ett<br>  
+               </div>
+
+            
+    <div id="link"> 
+
+     <div class = "fb"> 
+
+        <a href ="https://facebook.com"  target="_blank">
+        <i class="fa fa-facebook-square" style="font-size:48px;color:rgb(100, 97, 221);"></i>
+    </a>
+
+            
+    </div>
+
+        <div class="twitter">
+            <a href ="https://twitter.com"  target="_blank">
+            <i class="fa fa-twitter-square" style="font-size:48px;color:rgb(100, 97, 221)"></i>
+                </a>
+       
+        </div>   
+    
+    </div>
+        
+    </div>
