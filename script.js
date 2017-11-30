@@ -3,6 +3,7 @@ $(document).ready(function(){
     //Globala variablar
     var listOfParties;
     var users;
+
     //Hämtar users.json och sparar i en variabel (users)
     fetch("./users.json")
     .then(function(response) {
@@ -10,16 +11,11 @@ $(document).ready(function(){
     })
     .then(function(ourUsers) {
         users = ourUsers;
-        createUserList();
     });
-<<<<<<< HEAD
-=======
 
-
-
-
-
-
+    $("#partyListContainer").hide();
+    $("#footer").hide();
+    $("#header").hide();
     $(".div2").hide();
     $(".div3").hide();
 
@@ -44,64 +40,44 @@ $(document).ready(function(){
 
 
 
->>>>>>> parent of 2bc4e2f... småändringar
     //Kollar om json objekten sparas i varialbeln
-    function createUserList() {
-        console.log(users);
+  /*  function createUserList() {
+        console.log(users);*/
+
         $(".buttonForm").click(function(){
         for(var i = 0; i < users.length; i++){
             
                 /*console.log(users[i].username)*/
             
             if( $(".mailForm").val() == users[i].username && $(".passwordForm").val() == users[i].password){
-                sessionStorage = users[i];
-                console.log("hej");
+
+                
+                $("#main").hide();
+                $("#partyListContainer").show();
+                $("#footer").show();
+                $("#header").show();
+
+                sessionStorage.saveUser = users[i].username;
+                
+                console.log(sessionStorage.saveUser);
+
                 }else{
-                console.log("hejdå");
+                console.log();
+                
                 }
             
             }
         })
-    }
+//}
    
     
     //Fadar in formuläret på första sidan
     
     $(".formWrap").hide();
     $(".formWrap").fadeIn(1500);
-    $("#wrapper").hide()
-    
-    /*fetch("./users.json")
-    .then(function(response) {
-        return response.json();
-    })
-    
-    .then(function(userList) {
-        var users = ("/.users.json");
-    });
-    
-    $(".buttonForm").click(function(){
-    
-        var userName = users.username;
-        var passWord = users.password;
-    
-        if(userName === $(".mailForm").val() && passWord === $(".passwordForm").val()){
-            console.log("hej");
-    }
-    
-    });
-    
-    */
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
+    $("#wrapper").hide();
+    $(".testar").hide();
+
     
     
     /* get parties from the json file and store it in a javascript variable */
@@ -267,8 +243,40 @@ $(document).ready(function(){
             getHighlightedTitle.innerText = listOfParties.title;
             getHighlightedTitle.className = "highlightedTitleClass";
             highlightedParty.appendChild(getHighlightedTitle);
-
-          //returning what to function created out from the function
+            //Date
+            var getHighlightedDate = document.createElement("p");
+            getHighlightedDate.innerText = listOfParties.date;
+            getHighlightedDate.className = "highlightedDateClass";
+            highlightedParty.appendChild(getHighlightedDate);
+            //Time
+            var getHighlightedTime = document.createElement("p");
+            getHighlightedTime.innerText = listOfParties.startTime + " - " + listOfParties.endTime;
+            getHighlightedTime.className = "highlightedTimeClass";
+            highlightedParty.appendChild(getHighlightedTime);
+            //Image
+            var getHighlightedImage = document.createElement("img");
+            getHighlightedImage.src = "bild/" + listOfParties.image;
+            getHighlightedImage.className = "highlightedImageClass";
+            $(highlightedParty).css("background-image", "url(" + getHighlightedImage.src + ")");
+            //Location
+            var getHighlightedLocation = document.createElement("p");
+            getHighlightedLocation.innerText = listOfParties.location;
+            getHighlightedLocation.className = "highlightedLocationClass"
+            highlightedParty.appendChild(getHighlightedLocation);
+            //Description
+            var getHighlightedDescription = document.createElement("p");
+            getHighlightedDescription.innerText = listOfParties.description;
+            getHighlightedDescription.className = "highlightedDescriptionClass";
+            highlightedParty.appendChild(getHighlightedDescription);
+            //Price
+            var getHighlightedPrice = document.createElement("p");
+            getHighlightedPrice.innerText = listOfParties.price + " kr";
+            getHighlightedPrice.className = "highlightedPriceClass";
+            highlightedParty.appendChild(getHighlightedPrice);
+          
+          
+          
+            //returning what to function created out from the function
           return highlightedParty;
 
 

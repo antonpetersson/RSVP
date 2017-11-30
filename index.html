@@ -1,28 +1,122 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width", initial-scale="1", shrink-to-fit="no">
-        <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
-        <script src="https://w3schools.com/lib/w3.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
-
-    <body>
+  <head>
+    <title>Anton Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
     
-        <div id="main">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+  <body>
+          
+    <div id="header">   
+      
+          
+      
+                  <div class="Title">
+                      <h1>Välkommen på fest!</h1>
+      
+                  </div> 
+      
+                 
+                  <!--logga ut Knapp-->
+                  <div class="logOut">   
+                      <button class="logOutButton">Logga ut</button>
+                  </div>
+      
+      
+          </div>
+          <div id="main">
             <div class="formWrap">
-            <div class="loginForm">
+              <div class="loginForm">
                 <h1 class="brandName">R V S P</h2>
                 <input type="text" name="Mail" value="Mailadress" class="mailForm">
                 <input type="password" name="Lösenord" value=".............." class="passwordForm">
                 <input type="submit" href="#" value="Logga in" class="buttonForm">
+              </div>
             </div>
+          </div>
+
+    <div id="wrapper">
+      
+      <div id="boxInfo"></div>
+
+      <div class="boxAttend">
+        <h1>Vill du komma?</h1>   
+        <div class = "knappBox"> 
+          <button class="knappJa" href="#">Jag kommer</button>  <button class="knappNej" href="#">Kommer Inte</button>
         </div>
 
-        <script src="script.js"></script>
+        <div class="textBox"> 
+          <textarea name="comment" form="usrform">Har du några allergier eller matönskemål?</textarea>  
+        </div>
+      </div>
+      
+      <div id="guestListBox"> gust </div> 
+    </div>
 
-    </body>
+    
+    <div id="partyListContainer"></div>
+  
+    <div id="footer">
+      
+                      
+                      
+                     <div class="menu"> <button href="#" class="knapp1">Om Oss</button>  <button href="#" class="knapp2">Kontakt</button>  <button href="#" class="knapp3">Villkor</button></div>
+                 
+                     <div class="box div1">Om Oss<br>
+                      <br>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.<br> 
+                      Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd<br>  
+                      boksättare tog att antal bokstäver och blandade dem för att göra ett<br>  
+                      </div>
+                 
+                     <div class="box div2">Kontakt<br>
+                      <center><br>Adress: Partyvägen 1<br>
+                      54694 Stockholm<br>
+                      <br>Telefon: 0834-73462372<br>
+                      <br>E-mail: party@mail.se</center></div>
+      
+                 
+                     <div class="box div3">Villkor<br>
+                      <br>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.<br> 
+                      Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd<br>  
+                      boksättare tog att antal bokstäver och blandade dem för att göra ett<br>  
+                     </div>
+      
+                  
+          <div id="link"> 
+      
+           <div class = "fb"> 
+      
+              <a href ="https://facebook.com"  target="_blank" alt="Facebook">
+              <i class="fa fa-facebook-square" style="font-size:48px;color:rgb(252, 252, 252);"></i>
+          </a>
+      
+                  
+          </div>
+      
+              <div class="twitter">
+                  <a href ="https://twitter.com"  target="_blank">
+                  <i class="fa fa-twitter-square" style="font-size:48px;color:rgb(255, 255, 255)"></i>
+                      </a>
+             
+              </div>   
+              <div class="insta">
+                <a href ="https://instagram.com" target="_blank">
+                  <i class="fa fa-instagram" style="font-size:48px;color:rgb(252, 252, 252)" ></i>
+                    </a>
+           
+            </div> 
+          </div>
+              
+          </div>
+     
+
+    <script src="./script.js"></script>
+  </body>
 </html>
