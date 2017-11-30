@@ -13,10 +13,6 @@ $(document).ready(function(){
     });
 
 
-
-
-
-
     $(".div2").hide();
     $(".div3").hide();
 
@@ -77,14 +73,6 @@ $(document).ready(function(){
     $("#wrapper").hide();
     $(".testar").hide();
 
-        
-    
-    
-    
-    
-    
-    
-    
     
     
     /* get parties from the json file and store it in a javascript variable */

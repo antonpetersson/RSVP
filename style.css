@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    background-color: black;
+    background-color: #252229;
 }
 
 
@@ -9,7 +9,7 @@ body{
 #header {
     height: 100px;
     width: 100%;
-    background-color: #353333;
+    background-color: #FFFFFF;
 
  
 }
@@ -17,9 +17,9 @@ body{
 
 
 .Title{
-    color: white;
+    color:#252229;
     font-size: 20px;
-    font-family: 'Dosis', sans-serif;
+    /*font-family: 'Dosis', sans-serif;*/
     width:50%;
     float:left;
 }
