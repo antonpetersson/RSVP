@@ -173,18 +173,14 @@ body{
 
 textarea {
 
-    width:200px;
+    width:400px;
     height:70px;
-
-}
-
-.knappBox {
-
-    width:300px;
+    margin:auto;
     
-
-
 }
+
+
+
 
 
 .guestList {
@@ -207,12 +203,25 @@ textarea {
     background-repeat: no-repeat;
     height: 380px;
     margin: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-}
+    }
+
+    .boxAttend  h1 { 
+        
+            text-align:center;
+            margin-top:50px;
+        }
+
+    .knappBox {
+
+        width:400px;
+        margin:auto;
+    }
+
+    .textBox {
+
+        width:400px;
+        margin:auto;
+    }
 
 #boxInfo {
 
@@ -235,10 +244,7 @@ textarea {
 text-align:center;
 
 }
-.boxAttend  h1 { 
 
-    text-align:center;
-}
 
 .knappJa {
     background: #34d994;
