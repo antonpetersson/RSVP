@@ -214,7 +214,6 @@ $(document).ready(function(){
 
                 createGuestList(4);
             }); 
-        
 
 
 
@@ -348,7 +347,7 @@ $(document).ready(function(){
     function createGuestList(val){
         var partyArray = JSON.parse(sessionStorage.listOfParties);       
        
-        console.log(val);
+        
         guestList = "<ul class='guestListUl'>";
         for(var i = 0; i < partyArray.length; i++) { 
             guestList += "<li>" + partyArray[val].guests[i] + "</li>"
