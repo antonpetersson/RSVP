@@ -10,27 +10,28 @@ body{
     height: 100px;
     width: 100%;
     background-color: #353333;
-
- 
 }
 
-
+#menu {
+    justify-content: space-between;
+}
 
 .Title{
     color: white;
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
+<<<<<<< HEAD
     width:50%;
     float:left;
     
+=======
+>>>>>>> parent of 8307246... Merge branch 'master' of https://github.com/antonpetersson/RSVP
 }
 
-.logOut {
-    width:50%;
-    float:right;     
-   
-    
+.logout{
+    float: right;
 }
+<<<<<<< HEAD
 
 .logOutButton { 
 
@@ -64,6 +65,8 @@ body{
         text-decoration: none;
       }
 
+=======
+>>>>>>> parent of 8307246... Merge branch 'master' of https://github.com/antonpetersson/RSVP
 /*Ovan Gäller Header*/
 
 
@@ -221,9 +224,6 @@ textarea {
 
     width:400px;
     height:70px;
-  max-width:420px;
-  max-height:100px;  
-  
     margin:auto;
     
 }
@@ -232,7 +232,7 @@ textarea {
 
 
 
-#guestListBox {
+.guestList {
 
     width:200px;
     background-color: rgb(179, 179, 179);
@@ -353,6 +353,7 @@ text-align:center;
         background-image: linear-gradient(to bottom, #ff0303, #030f17);
         text-decoration: none;
       }
+<<<<<<< HEAD
   
 
 
@@ -498,3 +499,6 @@ text-align:center;
                     }
             }
 
+=======
+  
+>>>>>>> parent of 8307246... Merge branch 'master' of https://github.com/antonpetersson/RSVP
