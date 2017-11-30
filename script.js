@@ -38,45 +38,51 @@ $(document).ready(function(){
     });
 
 
+  //Fadar in formuläret på första sidan
+  
+  $(".forgotPassword").hide();
+  $(".formWrap").hide();
+  $(".formWrap").fadeIn(1500);
+  $("#wrapper").hide();
+  $(".testar").hide();
 
-
-    //Kollar om json objekten sparas i varialbeln
-  /*  function createUserList() {
-        console.log(users);*/
+  if(sessionStorage.saveUser != null ){
+    thisUserIsLoggedIn();
+    }else{
 
         $(".buttonForm").click(function(){
         for(var i = 0; i < users.length; i++){
             
-                /*console.log(users[i].username)*/
-            
+            //Om password och username stämmer loggas användare in och sparas i sessionstorage
             if( $(".mailForm").val() == users[i].username && $(".passwordForm").val() == users[i].password){
 
-                
-                $("#main").hide();
-                $("#partyListContainer").show();
-                $("#footer").show();
-                $("#header").show();
-
+                thisUserIsLoggedIn();
                 sessionStorage.saveUser = users[i].username;
-                
-                console.log(sessionStorage.saveUser);
 
+
+            //annars visas glömt lösenord
                 }else{
-                console.log();
-                
+                    $(".formWrap").hide();
+                    $(".forgotPassword").show();
                 }
-            
             }
         })
-//}
+    }
+    
+    //loggar ut användare
+    $(".logOutButton").click(function(){
+        sessionStorage.removeItem("saveUser");
+        location.reload();
+    });
+
+    function thisUserIsLoggedIn(){
+        $("#main").hide();
+        $("#partyListContainer").show();
+        $("#footer").show();
+        $("#header").show();
+    }
    
     
-    //Fadar in formuläret på första sidan
-    
-    $(".formWrap").hide();
-    $(".formWrap").fadeIn(1500);
-    $("#wrapper").hide();
-    $(".testar").hide();
 
     
     
