@@ -7,7 +7,7 @@
         "startTime": "21.00" ,
         "endTime": "06.00",
         "image": "nattklubb1.jpg",
-        "guests": ["Janne", "Anton", "Louise", "Jesper"],
+        "guests": ["Janne", "Anton", "Louise", "Jesper", "Amanda"],
         "price": 595
     },{
         "id": 2,
@@ -49,7 +49,7 @@
         "endTime": "09.00",
         "location": "PIR FYRA 2, tfn: 031-328345",
         "image": "batfesten.jpg",
-        "guests": ["David", "Mylene", "Mikela", "Joakim"],
+        "guests": ["David", "Mylene", "Mikela", "Joakim", "Johan"],
         "price": 995
     }
 ]
