@@ -3,7 +3,6 @@ $(document).ready(function(){
     //Globala variablar
     var listOfParties;
     var users;
-
     //Hämtar users.json och sparar i en variabel (users)
     fetch("./users.json")
     .then(function(response) {
@@ -11,6 +10,7 @@ $(document).ready(function(){
     })
     .then(function(ourUsers) {
         users = ourUsers;
+        createUserList();
     });
 <<<<<<< HEAD
 =======
@@ -46,41 +46,54 @@ $(document).ready(function(){
 
 >>>>>>> parent of 2bc4e2f... småändringar
     //Kollar om json objekten sparas i varialbeln
-  /*  function createUserList() {
-        console.log(users);*/
-
+    function createUserList() {
+        console.log(users);
         $(".buttonForm").click(function(){
         for(var i = 0; i < users.length; i++){
             
                 /*console.log(users[i].username)*/
             
             if( $(".mailForm").val() == users[i].username && $(".passwordForm").val() == users[i].password){
-
-                $(".formWrap").hide();
-                $(".loginForm").hide();
-                $(".testar").show();
-
-                sessionStorage.saveUser = users[i].username;
-                
-                console.log(sessionStorage.saveUser);
-
+                sessionStorage = users[i];
+                console.log("hej");
                 }else{
-                console.log();
-                
+                console.log("hejdå");
                 }
             
             }
         })
-//}
+    }
    
     
     //Fadar in formuläret på första sidan
     
     $(".formWrap").hide();
     $(".formWrap").fadeIn(1500);
-    $("#wrapper").hide();
-    $(".testar").hide();
-
+    $("#wrapper").hide()
+    
+    /*fetch("./users.json")
+    .then(function(response) {
+        return response.json();
+    })
+    
+    .then(function(userList) {
+        var users = ("/.users.json");
+    });
+    
+    $(".buttonForm").click(function(){
+    
+        var userName = users.username;
+        var passWord = users.password;
+    
+        if(userName === $(".mailForm").val() && passWord === $(".passwordForm").val()){
+            console.log("hej");
+    }
+    
+    });
+    
+    */
+    
+    
         
     
     
