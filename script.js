@@ -125,11 +125,13 @@ $(document).ready(function(){
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedIdundefined").hide()
-
+                
                 $("#partyId1").hide()
                 $("#partyId2").show()
                 $("#partyId3").show()
-                createGuestList(1);
+
+                createGuestList(0);
+                
             }); 
     
             $("#partyId2").click(function(){
@@ -142,6 +144,8 @@ $(document).ready(function(){
                 $("#partyId1").show()
                 $("#partyId2").hide()
                 $("#partyId3").show()
+
+                createGuestList(1);
              }); 
     
              $("#partyId3").click(function(){
@@ -154,7 +158,10 @@ $(document).ready(function(){
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").hide()
-                 
+
+                createGuestList(2);
+                
+                
          
      
              }); 
@@ -281,28 +288,19 @@ $(document).ready(function(){
 
 
       }
-/*
-      function createGuestList(val){
-        var partyArray = JSON.parse(sessionStorage.listOfParties);
 
-            console.log(val)
+    function createGuestList(val){
+        var partyArray = JSON.parse(sessionStorage.listOfParties);       
        
-       
+        console.log(val);
         guestList = "<ul>";
         for(var i = 0; i < partyArray.length; i++) { 
-            if(partyArray[i].id == val){
-                console.log(hej);
-
-            }
-
-
-
-            guestList += "<li>" + partyArray[val].guests + "</li>"
-        }
+            guestList += "<li>" + partyArray[val].guests[i] + "</li>"
+        }     
         guestList += "</ul>"
-        console.log(guestList);
-          
+        
+        $("#guestListBox").html(guestList);
       }
-  */
+  
     });
     
