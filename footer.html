@@ -3,7 +3,7 @@
         <head>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script>
                 $(document).ready(function(){
     
@@ -38,8 +38,12 @@
         
         <style>
 
+ 
     #footer{
-        margin-top: 100%;
+        position: absolute;
+        right: 0;
+         bottom: 0;
+        left: 0;
         height: 200px;
         width: 100%;
         background-color: rgb(53, 51, 51);
@@ -61,21 +65,46 @@
         }
 
     .knapp1 {
-        background-color: rgb(41, 39, 39);
+        background-color: rgb(53, 51, 51);
         padding: 10px;
         color: white;
+        border:none;
+        margin-top:5px;
+        font-size:15px;
     }
 
     .knapp2 {
-        background-color: rgb(41, 39, 39);
+        background-color: rgb(53, 51, 51);
         padding: 10px;
         color: white;
+        border:none;
+        margin-top:10px;
+        font-size:15px;
+    }
+    .knapp3 {
+        background-color: rgb(53, 51, 51);
+        padding: 10px;
+        color: white;
+        border:none;
+        margin-top:10px;
+        font-size:15px;
     }
 
-    .knapp3 {
-        background-color: rgb(41, 39, 39);
-        padding: 10px;
-        color: white;
+
+    .knapp1:hover {
+
+        font-size:20px;
+
+    }
+    .knapp2:hover {
+
+        font-size:20px;
+
+    }
+    .knapp3:hover {
+
+        font-size:20px;
+
     }
 
     button {
@@ -96,20 +125,23 @@
 
     #link {
         padding: 20px;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
+        margin-left: 10px;  
+        display:flex;
+
         }    
 
-    .links1 {
-    padding: 10px;
-    }
 
-    .links2 {
-    padding: 10px;
-    }
 
-   
+        .twitter {
+
+            margin-left:20px;   
+        }
+  
+        .twitter i:hover { 
+
+            color:black;
+
+        }
 
 
 
@@ -121,7 +153,7 @@
 
                 
                 
-               <div class="menu"> <button href="#" class="knapp1">Om Oss</button> | <button href="#" class="knapp2">Kontakt</button> | <button href="#" class="knapp3">Villkor</button></div>
+               <div class="menu"> <button href="#" class="knapp1">Om Oss</button>  <button href="#" class="knapp2">Kontakt</button>  <button href="#" class="knapp3">Villkor</button></div>
            
                <div class="box div1">Om Oss<br>
                 <br>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.<br> 
@@ -145,18 +177,22 @@
             
     <div id="link"> 
 
-        <div class="links1">
-                <a href="https://www.facebook.com/">
-                <img src="facebook-4.svg" alt="https://developers.facebook.com/docs/plugins/follow-button/" width="42" height="42" border="0"></a>
-            
-            <div class="links2">            
-                <a href="https://twitter.com/?lang=sv">
-                <img src="Twitter-logotyp.png" alt="https://twitter.com/?lang=sv" width="42" height="42" border="0"></a>
-                        
-                                
-                               
-            </div>
+     <div class = "fb"> 
 
-        </div>
+        <a href ="https://facebook.com"  target="_blank">
+        <i class="fa fa-facebook-square" style="font-size:48px;color:rgb(100, 97, 221);"></i>
+    </a>
+
+            
+    </div>
+
+        <div class="twitter">
+            <a href ="https://twitter.com"  target="_blank">
+            <i class="fa fa-twitter-square" style="font-size:48px;color:rgb(100, 97, 221)"></i>
+                </a>
+       
+        </div>   
+    
+    </div>
         
     </div>
