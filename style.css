@@ -225,6 +225,16 @@ textarea {
 
     width:400px;
     height:70px;
+<<<<<<< HEAD
+
+} 
+
+.knappBox {
+
+    width:300px;
+    
+} 
+=======
   max-width:420px;
   max-height:100px;  
   
@@ -234,6 +244,7 @@ textarea {
 
 
 
+>>>>>>> 405b34ac090a2ff07616b4a4b5bf99a6d4575572
 
 
 #guestListBox {
@@ -358,6 +369,22 @@ text-align:center;
         text-decoration: none;
       }
   
+<<<<<<< HEAD
+      .highlightedClass {
+        width: 600px;
+        background-size: 600px;
+        height: 380px;
+
+
+        
+      }
+
+      .bgcolor {
+        width: 480px;  
+        background-color: white;
+
+      }
+=======
 
 
 /******** FOOOOTER *************/
@@ -505,3 +532,4 @@ text-align:center;
                     }
             }
 
+>>>>>>> 405b34ac090a2ff07616b4a4b5bf99a6d4575572
