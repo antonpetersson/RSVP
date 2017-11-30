@@ -164,7 +164,7 @@ body{
 
 
 
-#wrapperNk, #wrapperHf, #wrapperDf {
+#wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -214,7 +214,7 @@ textarea {
     align-content: flex-start;
 }
 
-.boxInfo {
+#boxInfo {
 
     width: 600px;
     background-color: rgb(179, 179, 179);

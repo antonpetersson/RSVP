@@ -2,16 +2,13 @@ $(document).ready(function(){
     //Globala variablar
     var listOfParties;
     
-    
-    
+   
     
     //Fadar in formuläret på första sidan
     
     $(".formWrap").hide();
     $(".formWrap").fadeIn(1500);
-    $("#wrapperNk").hide()
-    $("#wrapperHf").hide()
-    $("#wrapperDf").hide()
+    $("#wrapper").hide()
     
     /*fetch("./users.json")
     .then(function(response) {
@@ -60,7 +57,9 @@ $(document).ready(function(){
     function createUIFromLoadedParties() {
         var partyListContainer = document.getElementById("partyListContainer");
         partyListContainer.className = "partyListContainerClass";
-        
+
+        var highlightedPartyContainer = document.getElementById("boxInfo");
+        highlightedPartyContainer.classname = "highlightedPartyContainerClass";
        
        
     
@@ -69,7 +68,8 @@ $(document).ready(function(){
     
            /* .boxInfo.innerHtml*/
             var party = createParty(listOfParties[i]);
-            
+            var highlightedParty = createHighlightedParty(listOfParties[i]);
+        
     
     
     
@@ -79,37 +79,54 @@ $(document).ready(function(){
     
     
            $("#partyId1").click(function(){
-              
-                $("#wrapperNk").show(500);
-                $("#wrapperHf").hide()
-                $("#wrapperDf").hide();
-                
-        
+                console.log("hej 1");
+                $("#wrapper").show()
+                $("#highlightedId1").show()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedIdundefined").hide()
+
+                $("#partyId1").hide()
+                $("#partyId2").show()
+                $("#partyId3").show()
     
             }); 
     
             $("#partyId2").click(function(){
-            
-                $("#wrapperHf").show(500);
-                $("#wrapperNk").hide();
-                $("#wrapperDf").hide();
+                console.log("hej 1");
+                $("#wrapper").show()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").show()
+                $("#highlightedId3").hide()
+                $("#highlightedIdundefined").hide()
+
+                $("#partyId1").show()
+                $("#partyId2").hide()
+                $("#partyId3").show()
                  
          
      
              }); 
     
-    
              $("#partyId3").click(function(){
-             
-                 $("#wrapperDf").show(500);
-                 $("#wrapperNk").hide();
-                 $("#wrapperHf").hide();
+                console.log("hej 1");
+                $("#wrapper").show()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").show()
+                $("#highlightedIdundefined").hide()
+
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").hide()
                  
          
      
              }); 
             
             partyListContainer.appendChild(party);
+            highlightedPartyContainer.appendChild(highlightedParty);
+
             
            
         }
@@ -119,7 +136,7 @@ $(document).ready(function(){
     
     //Creating function that pulls the parties and adding..
         function createParty(listOfParties) {
-            var party = document.createElement("div")
+            var party = document.createElement("div");
             party.className = "partyClass";
             party.id = "partyId" + listOfParties.id;
             var partyRSVP
@@ -170,9 +187,30 @@ $(document).ready(function(){
     
           //returning what to function created out from the function
           return party;
-          
-          
-      
       }
+
+
+
+
+
+      //Funktion för att få upp info och kunna tacka ja.
+      function createHighlightedParty(listOfParties){
+          var highlightedParty = document.createElement("div");
+          highlightedParty.className = "highlightedClass";
+          highlightedParty.id = "highlightedId" + listOfParties.id;
+
+            //Title
+            var getHighlightedTitle = document.createElement("h1");
+            getHighlightedTitle.innerText = listOfParties.title;
+            getHighlightedTitle.className = "highlightedTitleClass";
+            highlightedParty.appendChild(getHighlightedTitle);
+
+          //returning what to function created out from the function
+          return highlightedParty;
+
+
+      }
+
+
     
     });
