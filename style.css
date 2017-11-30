@@ -250,7 +250,9 @@ textarea {
     align-items: flex-start;
     align-content: flex-start;
 }
-
+.guestListUl {
+    list-style-type: none;
+}
 .boxAttend  {
     width: 600px;
     background-color: rgb(179, 179, 179);

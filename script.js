@@ -293,7 +293,7 @@ $(document).ready(function(){
         var partyArray = JSON.parse(sessionStorage.listOfParties);       
        
         console.log(val);
-        guestList = "<ul>";
+        guestList = "<ul class='guestListUl'>";
         for(var i = 0; i < partyArray.length; i++) { 
             guestList += "<li>" + partyArray[val].guests[i] + "</li>"
         }     
