@@ -3,6 +3,7 @@ $(document).ready(function(){
     //Globala variablar
     var listOfParties;
     var users;
+
     //Hämtar users.json och sparar i en variabel (users)
     fetch("./users.json")
     .then(function(response) {
@@ -10,65 +11,69 @@ $(document).ready(function(){
     })
     .then(function(ourUsers) {
         users = ourUsers;
-        createUserList();
     });
+
+
+    $(".div2").hide();
+    $(".div3").hide();
+
+    $(".knapp1").click(function(){
+        $(".div1").slideDown("1000");
+        $(".div2").hide();
+        $(".div3").hide();
+    });
+
+    $(".knapp2").click(function(){
+        $(".div2").slideDown("1000");
+        $(".div1").hide();
+        $(".div3").hide();
+    });
+
+    $(".knapp3").click(function(){
+        $(".div3").slideDown("1000");
+        $(".div1").hide();
+        $(".div2").hide();
+    });
+
+
+
+
     //Kollar om json objekten sparas i varialbeln
-    function createUserList() {
-        console.log(users);
+  /*  function createUserList() {
+        console.log(users);*/
+
         $(".buttonForm").click(function(){
         for(var i = 0; i < users.length; i++){
             
                 /*console.log(users[i].username)*/
             
             if( $(".mailForm").val() == users[i].username && $(".passwordForm").val() == users[i].password){
-                sessionStorage = users[i];
-                console.log("hej");
+
+                $(".formWrap").hide();
+                $(".loginForm").hide();
+                $(".testar").show();
+
+                sessionStorage.saveUser = users[i].username;
+                
+                console.log(sessionStorage.saveUser);
+
                 }else{
-                console.log("hejdå");
+                console.log();
+                
                 }
             
             }
         })
-    }
+//}
    
     
     //Fadar in formuläret på första sidan
     
     $(".formWrap").hide();
     $(".formWrap").fadeIn(1500);
-    $("#wrapper").hide()
-    
-    /*fetch("./users.json")
-    .then(function(response) {
-        return response.json();
-    })
-    
-    .then(function(userList) {
-        var users = ("/.users.json");
-    });
-    
-    $(".buttonForm").click(function(){
-    
-        var userName = users.username;
-        var passWord = users.password;
-    
-        if(userName === $(".mailForm").val() && passWord === $(".passwordForm").val()){
-            console.log("hej");
-    }
-    
-    });
-    
-    */
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
+    $("#wrapper").hide();
+    $(".testar").hide();
+
     
     
     /* get parties from the json file and store it in a javascript variable */
