@@ -120,7 +120,7 @@ $(document).ready(function(){
     //console.log (listOfParties[i].id)
     
             $("#partyId1").click(function(){
-                $("#wrapper").show()
+                $("#wrapper").slideDown()
                 $("#highlightedId1").show()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
@@ -139,7 +139,7 @@ $(document).ready(function(){
             }); 
     
             $("#partyId2").click(function(){
-                $("#wrapper").show()
+                $("#wrapper").slideDown()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").show()
                 $("#highlightedId3").hide()
@@ -158,7 +158,7 @@ $(document).ready(function(){
              }); 
     
              $("#partyId3").click(function(){
-                $("#wrapper").show()
+                $("#wrapper").slideDown()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").show()
@@ -177,7 +177,7 @@ $(document).ready(function(){
                 createGuestList(2);
             }); 
             $("#partyId4").click(function(){
-                $("#wrapper").show()
+                $("#wrapper").slideDown()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
@@ -196,7 +196,7 @@ $(document).ready(function(){
                 createGuestList(2);
             }); 
             $("#partyId5").click(function(){
-                $("#wrapper").show()
+                $("#wrapper").slideDown()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
@@ -215,7 +215,7 @@ $(document).ready(function(){
                 createGuestList(2);
             }); 
             $("#partyId6").click(function(){
-                $("#wrapper").show()
+                $("#wrapper").slideDown()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
