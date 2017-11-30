@@ -308,3 +308,108 @@ text-align:center;
         text-decoration: none;
       }
   
+
+
+/******** FOOOOTER *************/
+
+#footer{
+   
+    right: 0;
+     bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(53, 51, 51);
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+     }
+
+.menu {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(53, 51, 51);
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-left: 50px;
+    }
+
+.knapp1 {
+    background-color: rgb(53, 51, 51);
+    padding: 10px;
+    color: white;
+    border:none;
+    margin-top:5px;
+    font-size:15px;
+}
+
+.knapp2 {
+    background-color: rgb(53, 51, 51);
+    padding: 10px;
+    color: white;
+    border:none;
+    margin-top:10px;
+    font-size:15px;
+}
+.knapp3 {
+    background-color: rgb(53, 51, 51);
+    padding: 10px;
+    color: white;
+    border:none;
+    margin-top:10px;
+    font-size:15px;
+}
+
+
+.knapp1:hover {
+
+    font-size:20px;
+
+}
+.knapp2:hover {
+
+    font-size:20px;
+
+}
+.knapp3:hover {
+
+    font-size:20px;
+
+}
+
+    
+
+.div1, .div2, .div3 {
+    width: 500px;
+    height: 160px;
+    background-color: rgb(41, 39, 39);
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    padding:10px;
+    }
+
+#link {
+    padding: 20px;
+    margin-left: 10px;  
+    display:flex;
+    justify-content: flex end;
+
+    }    
+
+
+
+    .twitter {
+
+        margin-left:20px;   
+    }
+
+    .twitter i:hover { 
+
+        color:black;
+
+    }
