@@ -12,6 +12,39 @@ $(document).ready(function(){
     .then(function(ourUsers) {
         users = ourUsers;
     });
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+    $(".div2").hide();
+    $(".div3").hide();
+
+    $(".knapp1").click(function(){
+        $(".div1").slideDown("1000");
+        $(".div2").hide();
+        $(".div3").hide();
+    });
+
+    $(".knapp2").click(function(){
+        $(".div2").slideDown("1000");
+        $(".div1").hide();
+        $(".div3").hide();
+    });
+
+    $(".knapp3").click(function(){
+        $(".div3").slideDown("1000");
+        $(".div1").hide();
+        $(".div2").hide();
+    });
+
+
+
+
+>>>>>>> parent of 2bc4e2f... småändringar
     //Kollar om json objekten sparas i varialbeln
   /*  function createUserList() {
         console.log(users);*/
