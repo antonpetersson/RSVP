@@ -56,6 +56,39 @@
         "price": 995
     },{
         "id": 5,
+<<<<<<< HEAD
+        "title": "Öfesten",
+        "description": "Festa ute på västkusten, ta båten ut till en holme och njut av en kall bärs med dina polare!",
+        "date": "12 Juni",
+        "startTime": "09.00",
+        "endTime": "18.00",
+        "location": "Västkusten 10a, tfn 031-9523513",
+        "image": "ofest.jpg",
+        "guests": ["Jonathan", "André", "Anton", "Amanda", "Julia"],
+        "price": 150
+    },{
+        "id": 6,
+        "title": "LanPartyt",
+        "description": "Man behöver inte dra ut o kröka på stan eller någon annanstans, ta med dina polare och lira dator istället!",
+        "date": "Alla Fredagar",
+        "startTime": "16.00",
+        "endTime": "03.00",
+        "location": "Kungsportsavenyn 2",
+        "image": "lanparty.jpg",
+        "guests": ["Thommy", "Janne", "Johan", "Daniel", "Fredrik"],
+        "price": 225
+    },{
+        "id": 7,
+        "title": "Strandpartyt",
+        "description": "Dra iväg till södra Sverige med alla du känner och njut av stranden på Österlen - ta med badkläder och njut!",
+        "date": "22 Juli",
+        "startTime": "11.00",
+        "endTime": "19.00",
+        "location": "Sandhammaren 1a, 0706-030231",
+        "image": "strandparty.jpg",
+        "guests": ["Amanda", "Anton", "Faroch", "Martin", "Anders"],
+        "price": 495
+=======
         "title": "",
         "description": "",
         "date": "",
@@ -87,6 +120,7 @@
         "image": ".jpg",
         "guests": ["", "", "", "", ""],
         "price": 2
+>>>>>>> aba84c5b26506fde38e999affd6a37fa151d8aa1
     },{
         "id": 8,
         "title": "Bröllopsfesten",
