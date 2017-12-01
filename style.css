@@ -1,11 +1,7 @@
 body{
     margin:0;
     padding:0;
-<<<<<<< HEAD
-    background-color: #252229;
-=======
     background-color: rgb(29, 28, 28);
->>>>>>> 4ae2a19440f68e8b1f6261e654716635e6378dbf
 }
 
 
@@ -545,7 +541,5 @@ text-align:center;
           
           }
              
-          #footer {
-              width: 600px;
-          }
+   
         }
