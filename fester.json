@@ -6,6 +6,7 @@
         "date": "Alla lördagar",
         "startTime": "21.00" ,
         "endTime": "06.00",
+        "location":"PIR FYRA 2, tfn: 031-328345",
         "image": "nattklubb1.jpg",
         "guests": ["Janne", "Anton", "Louise", "Jesper", "Amanda"],
         "price": 595
@@ -15,7 +16,8 @@
         "description": "Hemmafest på takvåningen, egen DJ och en stor utebalkong med utsikt över hela Göteborg, ta med dina vänner och njut!",
         "date": "12 Januari",
         "startTime": "17.30",
-        "endTime": "01.30", 
+        "endTime": "01.30",
+        "location":"Mässans Gata 24, tfn: 031-548345", 
         "image": "hemmafest1.jpg",
         "guests": ["André", "Anders", "Amanda", "Farosh", "Ulrika"],
         "price": 395
@@ -25,7 +27,8 @@
         "description": "Det finns inget bättre än att ta en bärs utomhus i solen, med dina vänner.",
         "date": "20 Januari",
         "startTime": "16.00",
-        "endTime": "-",
+        "endTime": "",
+        "location":"Mässans Gata 24, tfn: 031-548345",
         "image": "dagsfest1.jpg",
         "guests": ["Jesper", "Emil", "Jonathan", "Christian", "Martin", "Joel"],
         "price": 0
