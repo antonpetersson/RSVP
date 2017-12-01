@@ -56,7 +56,6 @@
         "price": 995
     },{
         "id": 5,
-<<<<<<< HEAD
         "title": "Öfesten",
         "description": "Festa ute på västkusten, ta båten ut till en holme och njut av en kall bärs med dina polare!",
         "date": "12 Juni",
@@ -88,39 +87,6 @@
         "image": "strandparty.jpg",
         "guests": ["Amanda", "Anton", "Faroch", "Martin", "Anders"],
         "price": 495
-=======
-        "title": "",
-        "description": "",
-        "date": "",
-        "startTime": "",
-        "endTime": "",
-        "location": "",
-        "image": ".jpg",
-        "guests": ["", "", "", "", ""],
-        "price": 2
-    },{
-        "id": 6,
-        "title": "",
-        "description": "",
-        "date": "",
-        "startTime": "",
-        "endTime": "",
-        "location": "",
-        "image": ".jpg",
-        "guests": ["", "", "", "", ""],
-        "price": 2
-    },{
-        "id": 7,
-        "title": "",
-        "description": "",
-        "date": "",
-        "startTime": "",
-        "endTime": "",
-        "location": "",
-        "image": ".jpg",
-        "guests": ["", "", "", "", ""],
-        "price": 2
->>>>>>> aba84c5b26506fde38e999affd6a37fa151d8aa1
     },{
         "id": 8,
         "title": "Bröllopsfesten",
