@@ -1,7 +1,11 @@
 body{
     margin:0;
     padding:0;
+<<<<<<< HEAD
     background-color: #252229;
+=======
+    background-color: rgb(29, 28, 28);
+>>>>>>> 4ae2a19440f68e8b1f6261e654716635e6378dbf
 }
 
 
@@ -93,7 +97,7 @@ body{
     background-color: white;
     height: 420px;
     width: 450px;
-    box-shadow: 5px 5px 66px 5px rgba(65, 65, 65, 0.849);
+    box-shadow: 5px 5px 66px 5px rgb(65, 65, 65);
 }
 
 .loginForm{
@@ -132,16 +136,6 @@ body{
     color: white;
     font-weight: bold;
     cursor: pointer;
-}
-
-forgotPassword{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    height: 420px;
-    width: 450px;
-    /*box-shadow: 5px 5px 66px 5px rgba(65, 65, 65, 0.815);*/
 }
 
 
@@ -528,5 +522,7 @@ text-align:center;
           
           }
              
-   
-
+          #footer {
+              width: 600px;
+          }
+        }
