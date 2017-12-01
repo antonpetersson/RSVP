@@ -556,7 +556,7 @@ $(document).ready(function(){
         
         guestList = "<h1>Gästlista:</h1><ul class='guestListUl'>";
         
-        for(var i = 0; i < partyArray.length; i++) { 
+        for(var i = 0; i < 5 /*partyArray.length*/; i++) { 
             guestList += "<li>" + partyArray[val].guests[i] + "</li>"
         }     
         guestList += "</ul>"
