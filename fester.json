@@ -54,5 +54,60 @@
         "image": "batfesten.jpg",
         "guests": ["David", "Mylene", "Mikela", "Joakim", "Johan"],
         "price": 995
+    },{
+        "id": 5,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 
+        },{
+        "id": 6,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 
+    },{
+        "id": 7,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 
+    },{
+        "id": 8,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 
+    },{
+        "id": 9,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 
     }
 ]
