@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "title": "Nattklubben X",
         "description": "Avenyns absolut trendigaste Nattklubb - RSVP'a nu och få gratis drink i entrén",
         "date": "Alla lördagar",
@@ -11,7 +11,7 @@
         "guests": ["Janne", "Anton", "Louise", "Jesper", "Amanda"],
         "price": 595
     },{
-        "id": 2,
+        "id": 1,
         "title": "Hemmafesten",
         "description": "Hemmafest på takvåningen, egen DJ och en stor utebalkong med utsikt över hela Göteborg, ta med dina vänner och njut!",
         "date": "12 Januari",
@@ -22,7 +22,7 @@
         "guests": ["André", "Anders", "Amanda", "Farosh", "Ulrika"],
         "price": 395
     },{
-        "id": 3,
+        "id": 2,
         "title": "Dagsfesten",
         "description": "Det finns inget bättre än att ta en bärs utomhus i solen, med dina vänner.",
         "date": "20 Januari",
@@ -33,7 +33,7 @@
         "guests": ["Jesper", "Emil", "Jonathan", "Christian", "Martin", "Joel"],
         "price": 0
     },{
-        "id": 4,
+        "id": 3,
         "title": "Klassfesten",
         "description": "Ta med hela din klass eller ditt arbetsteam i en ball lokal på Gothia Hotel och njut av varje sekund tillsammans!",
         "date": "19 Januari",
@@ -44,7 +44,7 @@
         "guests": ["Jonas", "Elin", "Daniel", "Jenny", "Pedram", "Athena"],
         "price": 295
     },{
-        "id": 5,
+        "id": 4,
         "title": "Båtfesten",
         "description": "Om festen på fasta marken inte duger för eran smak, varför inte dra ut o kröka ute till havs?",
         "date": "10 Mars",
@@ -54,5 +54,60 @@
         "image": "batfesten.jpg",
         "guests": ["David", "Mylene", "Mikela", "Joakim", "Johan"],
         "price": 995
+    },{
+        "id": 5,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 2
+    },{
+        "id": 6,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 2
+    },{
+        "id": 7,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 2
+    },{
+        "id": 8,
+        "title": "Bröllopsfesten",
+        "description": "Välkommna på bröllop!",
+        "date": "15 Maj",
+        "startTime": "14.00",
+        "endTime": "00.00",
+        "location": "",
+        "image": "brollop1.jpg",
+        "guests": ["Anna", "Sara", "Henrik", "Kenneth", "Thommy"],
+        "price": 0
+    },{
+        "id": 9,
+        "title": "Skogsrave",
+        "description": "Ut i naturen!",
+        "date": "15 Juni",
+        "startTime": "20.00",
+        "endTime": "10.00",
+        "location": "Hemligt",
+        "image": "skogsrave.jpg",
+        "guests": ["Johnny", "Conny", "Klasse", "Frasse", "Hasse"],
+        "price": 200
     }
 ]
