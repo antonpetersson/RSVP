@@ -122,99 +122,99 @@ $(document).ready(function(){
             var highlightedParty = createHighlightedParty(listOfParties[i]);
             
     
-            $("#partyId1").click(function(){
+            $("#partyId0").click(function(){
                 $("#wrapper").hide()
                 $("#wrapper").slideDown(200)
-                $("#highlightedId1").show()
+                $("#highlightedId0").show()
+                $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
-                $("#highlightedId5").hide()
                 
-                $("#partyId1").hide()
+                $("#partyId0").hide()
+                $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").show()
-                $("#partyId5").show()
 
                 $(window).scrollTop(0);
 
                 createGuestList(0);
             }); 
     
-            $("#partyId2").click(function(){
+            $("#partyId1").click(function(){
                 $("#wrapper").hide()
                 $("#wrapper").slideDown(200)
-                $("#highlightedId1").hide()
-                $("#highlightedId2").show()
+                $("#highlightedId0").hide()
+                $("#highlightedId1").show()
+                $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
-                $("#highlightedId5").hide()
                 
-                $("#partyId1").show()
-                $("#partyId2").hide()
+                $("#partyId0").show()
+                $("#partyId1").hide()
+                $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").show()
-                $("#partyId5").show()
 
                 $(window).scrollTop(0);
 
                 createGuestList(1);
              }); 
     
-             $("#partyId3").click(function(){
+             $("#partyId2").click(function(){
                 $("#wrapper").hide()
                 $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
                 $("#highlightedId1").hide()
-                $("#highlightedId2").hide()
-                $("#highlightedId3").show()
+                $("#highlightedId2").show()
+                $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
-                $("#highlightedId5").hide()
 
 
+                $("#partyId0").show()
                 $("#partyId1").show()
-                $("#partyId2").show()
-                $("#partyId3").hide()
+                $("#partyId2").hide()
+                $("#partyId3").show()
                 $("#partyId4").show()
-                $("#partyId5").show()
 
                 $(window).scrollTop(0);
 
                 createGuestList(2);
             }); 
-            $("#partyId4").click(function(){
+            $("#partyId3").click(function(){
                 $("#wrapper").hide()
                 $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
-                $("#highlightedId3").hide()
-                $("#highlightedId4").show()
-                $("#highlightedId5").hide()
+                $("#highlightedId3").show()
+                $("#highlightedId4").hide()
 
+                $("#partyId0").show()
                 $("#partyId1").show()
                 $("#partyId2").show()
-                $("#partyId3").show()
-                $("#partyId4").hide()
-                $("#partyId5").show()
+                $("#partyId3").hide()
+                $("#partyId4").show()
 
                 $(window).scrollTop(0);
                 
                 createGuestList(3);
             }); 
-            $("#partyId5").click(function(){
+            $("#partyId4").click(function(){
                 $("#wrapper").hide()
                 $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
-                $("#highlightedId4").hide()
-                $("#highlightedId5").show()
+                $("#highlightedId4").show()
               
+                $("#partyId0").show()
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").show()
-                $("#partyId4").show()
-                $("#partyId5").hide()
+                $("#partyId4").hide()
                 
                 $(window).scrollTop(0);
 
