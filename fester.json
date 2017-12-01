@@ -97,7 +97,7 @@
         "location": "",
         "image": "brollop1.jpg",
         "guests": ["Anna", "Sara", "Henrik", "Kenneth", "Thommy"],
-        "price": 2
+        "price": 0
     },{
         "id": 9,
         "title": "Skogsrave",
