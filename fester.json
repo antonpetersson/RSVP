@@ -56,6 +56,7 @@
         "price": 995
     },{
         "id": 5,
+<<<<<<< HEAD
         "title": "Öfesten",
         "description": "Festa ute på västkusten, ta båten ut till en holme och njut av en kall bärs med dina polare!",
         "date": "12 Juni",
@@ -87,27 +88,60 @@
         "image": "strandparty.jpg",
         "guests": ["Amanda", "Anton", "Faroch", "Martin", "Anders"],
         "price": 495
+=======
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 2
+    },{
+        "id": 6,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 2
+    },{
+        "id": 7,
+        "title": "",
+        "description": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "location": "",
+        "image": ".jpg",
+        "guests": ["", "", "", "", ""],
+        "price": 2
+>>>>>>> aba84c5b26506fde38e999affd6a37fa151d8aa1
     },{
         "id": 8,
-        "title": "",
-        "description": "",
-        "date": "",
-        "startTime": "",
-        "endTime": "",
+        "title": "Bröllopsfesten",
+        "description": "Välkommna på bröllop!",
+        "date": "15 Maj",
+        "startTime": "14.00",
+        "endTime": "00.00",
         "location": "",
-        "image": ".jpg",
-        "guests": ["", "", "", "", ""],
-        "price": 
+        "image": "brollop1.jpg",
+        "guests": ["Anna", "Sara", "Henrik", "Kenneth", "Thommy"],
+        "price": 0
     },{
         "id": 9,
-        "title": "",
-        "description": "",
-        "date": "",
-        "startTime": "",
-        "endTime": "",
-        "location": "",
-        "image": ".jpg",
-        "guests": ["", "", "", "", ""],
-        "price": 
+        "title": "Skogsrave",
+        "description": "Ut i naturen!",
+        "date": "15 Juni",
+        "startTime": "20.00",
+        "endTime": "10.00",
+        "location": "Hemligt",
+        "image": "skogsrave.jpg",
+        "guests": ["Johnny", "Conny", "Klasse", "Frasse", "Hasse"],
+        "price": 200
     }
 ]
