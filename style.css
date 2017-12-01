@@ -403,12 +403,13 @@ text-align:center;
     right: 0;
      bottom: 0;
     left: 0;
-    height: 200px;
+    height: 400px;
     width: 100%;    
     background-color: rgb(53, 51, 51);
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
+    
     
      }
 
@@ -484,6 +485,7 @@ text-align:center;
     margin-left: 10px;  
     display:flex;
     justify-content: flex end;
+    
 
     }    
 
