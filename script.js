@@ -130,12 +130,24 @@ $(document).ready(function(){
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
+                
                 
                 $("#partyId0").hide()
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").show()
+
 
                 $(window).scrollTop(0);
 
@@ -150,12 +162,22 @@ $(document).ready(function(){
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
                 
                 $("#partyId0").show()
                 $("#partyId1").hide()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").show()
 
                 $(window).scrollTop(0);
 
@@ -170,6 +192,11 @@ $(document).ready(function(){
                 $("#highlightedId2").show()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
 
 
                 $("#partyId0").show()
@@ -177,6 +204,11 @@ $(document).ready(function(){
                 $("#partyId2").hide()
                 $("#partyId3").show()
                 $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").show()
 
                 $(window).scrollTop(0);
 
@@ -190,12 +222,22 @@ $(document).ready(function(){
                 $("#highlightedId2").hide()
                 $("#highlightedId3").show()
                 $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
 
                 $("#partyId0").show()
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").hide()
                 $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").show()
 
                 $(window).scrollTop(0);
                 
@@ -209,16 +251,171 @@ $(document).ready(function(){
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").show()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
               
                 $("#partyId0").show()
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").hide()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").show()
                 
                 $(window).scrollTop(0);
 
                 createGuestList(4);
+            }); 
+            $("#partyId5").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").show()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
+              
+                $("#partyId0").show()
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").hide()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").show()
+                
+                $(window).scrollTop(0);
+
+                createGuestList(5);
+            }); 
+            $("#partyId6").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").show()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
+              
+                $("#partyId0").show()
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").hide()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").show()
+                
+                $(window).scrollTop(0);
+
+                createGuestList(6);
+            }); 
+            $("#partyId7").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").show()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").hide()
+              
+                $("#partyId0").show()
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").hide()
+                $("#partyId8").show()
+                $("#partyId9").show()
+                
+                $(window).scrollTop(0);
+
+                createGuestList(7);
+            }); 
+            $("#partyId8").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").show()
+                $("#highlightedId9").hide()
+              
+                $("#partyId0").show()
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").hide()
+                $("#partyId9").show()
+                
+                $(window).scrollTop(0);
+
+                createGuestList(8);
+            }); 
+            $("#partyId9").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                $("#highlightedId5").hide()
+                $("#highlightedId6").hide()
+                $("#highlightedId7").hide()
+                $("#highlightedId8").hide()
+                $("#highlightedId9").show()
+              
+                $("#partyId0").show()
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+                $("#partyId5").show()
+                $("#partyId6").show()
+                $("#partyId7").show()
+                $("#partyId8").show()
+                $("#partyId9").hide()
+                
+                $(window).scrollTop(0);
+
+                createGuestList(9);
             }); 
 
             partyListContainer.appendChild(party);
