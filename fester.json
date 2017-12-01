@@ -1,36 +1,39 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "title": "Nattklubben X",
         "description": "Avenyns absolut trendigaste Nattklubb - RSVP'a nu och få gratis drink i entrén",
         "date": "Alla lördagar",
         "startTime": "21.00" ,
         "endTime": "06.00",
+        "location":"PIR FYRA 2, tfn: 031-328345",
         "image": "nattklubb1.jpg",
         "guests": ["Janne", "Anton", "Louise", "Jesper", "Amanda"],
         "price": 595
     },{
-        "id": 2,
+        "id": 1,
         "title": "Hemmafesten",
         "description": "Hemmafest på takvåningen, egen DJ och en stor utebalkong med utsikt över hela Göteborg, ta med dina vänner och njut!",
         "date": "12 Januari",
         "startTime": "17.30",
-        "endTime": "01.30", 
+        "endTime": "01.30",
+        "location":"Mässans Gata 24, tfn: 031-548345", 
         "image": "hemmafest1.jpg",
         "guests": ["André", "Anders", "Amanda", "Farosh", "Ulrika"],
         "price": 395
     },{
-        "id": 3,
+        "id": 2,
         "title": "Dagsfesten",
         "description": "Det finns inget bättre än att ta en bärs utomhus i solen, med dina vänner.",
         "date": "20 Januari",
         "startTime": "16.00",
-        "endTime": "-",
+        "endTime": "",
+        "location":"Mässans Gata 24, tfn: 031-548345",
         "image": "dagsfest1.jpg",
         "guests": ["Jesper", "Emil", "Jonathan", "Christian", "Martin", "Joel"],
         "price": 0
     },{
-        "id": 4,
+        "id": 3,
         "title": "Klassfesten",
         "description": "Ta med hela din klass eller ditt arbetsteam i en ball lokal på Gothia Hotel och njut av varje sekund tillsammans!",
         "date": "19 Januari",
@@ -41,7 +44,7 @@
         "guests": ["Jonas", "Elin", "Daniel", "Jenny", "Pedram", "Athena"],
         "price": 295
     },{
-        "id": 5,
+        "id": 4,
         "title": "Båtfesten",
         "description": "Om festen på fasta marken inte duger för eran smak, varför inte dra ut o kröka ute till havs?",
         "date": "10 Mars",

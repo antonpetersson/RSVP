@@ -245,9 +245,19 @@ textarea {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
+    
+}
+
+#guestListBox h1{
+    
+    padding-left: 30px;
 }
 .guestListUl {
+    margin-top: -10px;
     list-style-type: none;
+    
+ 
+    
 }
 .boxAttend  {
     width: 600px;
@@ -357,8 +367,31 @@ text-align:center;
         text-decoration: none;
       }
   
+      .highlightedClass {
+        width: 600px;
+        height: 320px;
+        background-size: 600px;
+        padding: 30px;
+        text-align: center;
+        
+    }
+    .boxInfowrap {
+        width: 600px;
+        background-color: red;
+      }
+    
+      .highlightedTitleClass, .highlightedDateClass, .highlightedTimeClass, .highlightedLocationClass, .highlightedDescriptionClass, .highlightedPriceClass {
+          background-color: rgba(255, 255, 255, 0.6);
+          margin: 0px 10px;
+          height: 30px;
+    
+      }
 
-
+      .highlightedPriceClass {
+          font-size: 32px;
+          height: 38px;
+      }
+ 
 /******** FOOOOTER *************/
 
 #footer{

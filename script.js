@@ -77,7 +77,7 @@ $(document).ready(function(){
 
     function thisUserIsLoggedIn(){
         $("#main").hide();
-        $("#partyListContainer").show();
+        $("#partyListContainer").fadeIn(1500);
         $("#footer").show();
         $("#header").show();
     }
@@ -122,98 +122,101 @@ $(document).ready(function(){
             var highlightedParty = createHighlightedParty(listOfParties[i]);
             
     
+            $("#partyId0").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").show()
+                $("#highlightedId1").hide()
+                $("#highlightedId2").hide()
+                $("#highlightedId3").hide()
+                $("#highlightedId4").hide()
+                
+                $("#partyId0").hide()
+                $("#partyId1").show()
+                $("#partyId2").show()
+                $("#partyId3").show()
+                $("#partyId4").show()
+
+                $(window).scrollTop(0);
+
+                createGuestList(0);
+            }); 
+    
             $("#partyId1").click(function(){
-                $("#wrapper").slideDown()
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
                 $("#highlightedId1").show()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
-                $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
                 
+                $("#partyId0").show()
                 $("#partyId1").hide()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").show()
-                $("#partyId5").show()
-                $("#partyId6").show()
-                createGuestList(0);
-            }); 
+
+                $(window).scrollTop(0);
+
+                createGuestList(1);
+             }); 
     
-            $("#partyId2").click(function(){
-                $("#wrapper").slideDown()
+             $("#partyId2").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").show()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
-                $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
-                
+
+
+                $("#partyId0").show()
                 $("#partyId1").show()
                 $("#partyId2").hide()
                 $("#partyId3").show()
                 $("#partyId4").show()
-                $("#partyId5").show()
-                $("#partyId6").show()
-                createGuestList(1);
-             }); 
-    
-             $("#partyId3").click(function(){
-                $("#wrapper").slideDown()
+
+                $(window).scrollTop(0);
+
+                createGuestList(2);
+            }); 
+            $("#partyId3").click(function(){
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").show()
                 $("#highlightedId4").hide()
-                $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
 
+                $("#partyId0").show()
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").hide()
                 $("#partyId4").show()
-                $("#partyId5").show()
-                $("#partyId6").show()
 
-                createGuestList(2);
+                $(window).scrollTop(0);
+                
+                createGuestList(3);
             }); 
             $("#partyId4").click(function(){
-                $("#wrapper").slideDown()
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
+                $("#highlightedId0").hide()
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").show()
-                $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
-
+              
+                $("#partyId0").show()
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").hide()
-                $("#partyId5").show()
-                $("#partyId6").show()
-
-                createGuestList(3);
-            }); 
-            $("#partyId5").click(function(){
-                $("#wrapper").slideDown()
-                $("#highlightedId1").hide()
-                $("#highlightedId2").hide()
-                $("#highlightedId3").hide()
-                $("#highlightedId4").hide()
-                $("#highlightedId5").show()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
-
-                $("#partyId1").show()
-                $("#partyId2").show()
-                $("#partyId3").show()
-                $("#partyId4").show()
-                $("#partyId5").hide()
-                $("#partyId6").show()
+                
+                $(window).scrollTop(0);
 
                 createGuestList(4);
             }); 
@@ -225,6 +228,18 @@ $(document).ready(function(){
 
     $(".knappJa").click(function(){
         console.log("ja")
+        /*var parsePartyArray = JSON.parse(sessionStorage.listOfParties);
+        
+                       
+            parsePartyArray.push( "Hej" );
+                       
+                        //printCarsList();
+        
+                        var json_str = JSON.stringify(parsePartyArray);
+                        sessionStorage.listOfParties = json_str;
+        
+            createGuestList();
+            */
     });
     
     
@@ -342,8 +357,8 @@ $(document).ready(function(){
         var partyArray = JSON.parse(sessionStorage.listOfParties);       
        
         
-        guestList = "<ul class='guestListUl'>";
-        //"i < partyArray.length;" ska ändras till typ "partyarray.guests.lenth"
+        guestList = "<h1>Gästlista:</h1><ul class='guestListUl'>";
+        
         for(var i = 0; i < partyArray.length; i++) { 
             guestList += "<li>" + partyArray[val].guests[i] + "</li>"
         }     
