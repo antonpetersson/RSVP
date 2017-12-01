@@ -77,7 +77,7 @@ $(document).ready(function(){
 
     function thisUserIsLoggedIn(){
         $("#main").hide();
-        $("#partyListContainer").show();
+        $("#partyListContainer").fadeIn(1500);
         $("#footer").show();
         $("#header").show();
     }
@@ -123,97 +123,100 @@ $(document).ready(function(){
             
     
             $("#partyId1").click(function(){
-                $("#wrapper").slideDown()
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
                 $("#highlightedId1").show()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
                 $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
                 
                 $("#partyId1").hide()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").show()
                 $("#partyId5").show()
-                $("#partyId6").show()
+
+                $(window).scrollTop(0);
+
                 createGuestList(0);
             }); 
     
             $("#partyId2").click(function(){
-                $("#wrapper").slideDown()
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
                 $("#highlightedId1").hide()
                 $("#highlightedId2").show()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
                 $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
                 
                 $("#partyId1").show()
                 $("#partyId2").hide()
                 $("#partyId3").show()
                 $("#partyId4").show()
                 $("#partyId5").show()
-                $("#partyId6").show()
+
+                $(window).scrollTop(0);
+
                 createGuestList(1);
              }); 
     
              $("#partyId3").click(function(){
-                $("#wrapper").slideDown()
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").show()
                 $("#highlightedId4").hide()
                 $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
+
 
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").hide()
                 $("#partyId4").show()
                 $("#partyId5").show()
-                $("#partyId6").show()
+
+                $(window).scrollTop(0);
 
                 createGuestList(2);
             }); 
             $("#partyId4").click(function(){
-                $("#wrapper").slideDown()
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").show()
                 $("#highlightedId5").hide()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
 
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").hide()
                 $("#partyId5").show()
-                $("#partyId6").show()
 
+                $(window).scrollTop(0);
+                
                 createGuestList(3);
             }); 
             $("#partyId5").click(function(){
-                $("#wrapper").slideDown()
+                $("#wrapper").hide()
+                $("#wrapper").slideDown(200)
                 $("#highlightedId1").hide()
                 $("#highlightedId2").hide()
                 $("#highlightedId3").hide()
                 $("#highlightedId4").hide()
                 $("#highlightedId5").show()
-                $("#highlightedId6").hide()
-                $("#highlightedIdundefined").hide()
-
+              
                 $("#partyId1").show()
                 $("#partyId2").show()
                 $("#partyId3").show()
                 $("#partyId4").show()
                 $("#partyId5").hide()
-                $("#partyId6").show()
+                
+                $(window).scrollTop(0);
 
                 createGuestList(4);
             }); 
