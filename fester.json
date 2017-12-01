@@ -64,8 +64,8 @@
         "location": "",
         "image": ".jpg",
         "guests": ["", "", "", "", ""],
-        "price": 
-        },{
+        "price": 2
+    },{
         "id": 6,
         "title": "",
         "description": "",
@@ -75,7 +75,7 @@
         "location": "",
         "image": ".jpg",
         "guests": ["", "", "", "", ""],
-        "price": 
+        "price": 2
     },{
         "id": 7,
         "title": "",
@@ -86,28 +86,28 @@
         "location": "",
         "image": ".jpg",
         "guests": ["", "", "", "", ""],
-        "price": 
+        "price": 2
     },{
         "id": 8,
-        "title": "",
-        "description": "",
-        "date": "",
-        "startTime": "",
-        "endTime": "",
+        "title": "Bröllopsfesten",
+        "description": "Välkommna på bröllop!",
+        "date": "15 Maj",
+        "startTime": "14.00",
+        "endTime": "00.00",
         "location": "",
-        "image": ".jpg",
-        "guests": ["", "", "", "", ""],
-        "price": 
+        "image": "brollop1.jpg",
+        "guests": ["Anna", "Sara", "Henrik", "Kenneth", "Thommy"],
+        "price": 2
     },{
         "id": 9,
-        "title": "",
-        "description": "",
-        "date": "",
-        "startTime": "",
-        "endTime": "",
-        "location": "",
-        "image": ".jpg",
-        "guests": ["", "", "", "", ""],
-        "price": 
+        "title": "Skogsrave",
+        "description": "Ut i naturen!",
+        "date": "15 Juni",
+        "startTime": "20.00",
+        "endTime": "10.00",
+        "location": "Hemligt",
+        "image": "skogsrave.jpg",
+        "guests": ["Johnny", "Conny", "Klasse", "Frasse", "Hasse"],
+        "price": 200
     }
 ]
