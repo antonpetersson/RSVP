@@ -255,9 +255,19 @@ textarea {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
+    
+}
+
+#guestListBox h1{
+    
+    padding-left: 30px;
 }
 .guestListUl {
+    margin-top: -10px;
     list-style-type: none;
+    
+ 
+    
 }
 .boxAttend  {
     width: 600px;

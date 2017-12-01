@@ -225,6 +225,18 @@ $(document).ready(function(){
 
     $(".knappJa").click(function(){
         console.log("ja")
+        /*var parsePartyArray = JSON.parse(sessionStorage.listOfParties);
+        
+                       
+            parsePartyArray.push( "Hej" );
+                       
+                        //printCarsList();
+        
+                        var json_str = JSON.stringify(parsePartyArray);
+                        sessionStorage.listOfParties = json_str;
+        
+            createGuestList();
+            */
     });
     
     
@@ -342,8 +354,8 @@ $(document).ready(function(){
         var partyArray = JSON.parse(sessionStorage.listOfParties);       
        
         
-        guestList = "<ul class='guestListUl'>";
-        //"i < partyArray.length;" ska ändras till typ "partyarray.guests.lenth"
+        guestList = "<h1>Gästlista:</h1><ul class='guestListUl'>";
+        
         for(var i = 0; i < partyArray.length; i++) { 
             guestList += "<li>" + partyArray[val].guests[i] + "</li>"
         }     
