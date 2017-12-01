@@ -517,27 +517,12 @@ text-align:center;
     margin-left: 10px;  
     display:flex;
     justify-content: flex end;
+    flex-direction: column;
     
 
     }    
 
 
-
-    .twitter {
-
-        margin-left:20px;   
-    }
-
-    .twitter i:hover { 
-
-        color:black;
-
-    }
-
-
-    .insta {
-        margin-left:20px;
-    }
 
     /** MEDIA QUERIES ***/
 
