@@ -5,7 +5,7 @@ $(document).ready(function(){
     var users;
 
     //Hämtar users.json och sparar i en variabel (users)
-    fetch("./users.json")
+    fetch("./kunder.json")
     .then(function(response) {
         return response.json();
     })
